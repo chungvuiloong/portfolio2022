@@ -48,6 +48,23 @@ function lastNameCheck() {
   }
 }
 
+function cNumberCheck() {
+  var numberValue = document.getElementById("cNumber").value;
+  var cNumberHighlight = document.querySelector("#cNumber");
+
+  if (numberValue == "") {
+    alert(
+      "Come on now. How can we contact you if we don't have your contact number."
+    );
+    cNumberHighlight.setAttribute("class", "invalid");
+  } else if (numberValue.match(letterFilter)) {
+    alert("There are alphabets in your contact number?!");
+    cNumberHighlight.setAttribute("class", "invalid");
+  } else {
+    cNumberHighlight.setAttribute("class", "valid");
+  }
+}
+
 // Check email for @
 function emailVerification() {
   var emailInput = document.getElementById("email").value;
