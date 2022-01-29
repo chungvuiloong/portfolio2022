@@ -91,7 +91,7 @@ ageCheck = () => {
       "The oldest living cat, Creme Puff, is 38 years old. You have broken the record for oldest cat! If you are a cat...."
     );
     ageHighlight.setAttribute("class", "valid");
-  } else if (ageValue > 38) {
+  } else if (ageValue > 100) {
     alert("Are you really that old?");
     ageHighlight.setAttribute("class", "valid");
   } else {
