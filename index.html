@@ -139,16 +139,16 @@
            
             <div class="col">
                 <label for="fname">First Name</label>
-                <input type="text" onblur="nameCheck()" id="fName" name="firstName" placeholder="Your name..">
+                <input type="text" id="fName" onblur="firstNameCheck()"  name="firstName" placeholder="Your name..">
 
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastName" placeholder="Your last name.."
+                <input type="text" id="lName" onblur="lastNameCheck()"  name="lastName" placeholder="Your last name.."
                 >
                 <label for="cname">Contact number</label>
                 <input type="text" id="cnumber" name="contactNumber" placeholder="Your contact number..">
 
                 <label for="lname">Email</label>
-                <input type="text" id="email" name="email" placeholder="Email.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">       
+                <input type="text" id="email" onblur="emailVerification()" name="email" placeholder="Email..">       
             </div>
 
             
