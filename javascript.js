@@ -3,16 +3,14 @@ var numberFilter = /^[0-9]+$/;
 var emailFilter =
   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-function meowUs() {
+meowUs = () => {
   // 1st Prototype - Works!!! BUt need to get ID from HTML
   // var meow = document.getElementById("meow");
 
-  return (
-    meow.play() + alert("Thank you for meowing us! We will meow back ASAP!")
-  );
-}
+  meow.play() + alert("Thank you for meowing us! We will meow back ASAP!");
+};
 
-function firstNameCheck() {
+firstNameCheck = () => {
   var nameInput = document.getElementById("fName").value;
   var fNameHighlight = document.querySelector("#fName");
 
@@ -28,9 +26,9 @@ function firstNameCheck() {
   } else {
     fNameHighlight.setAttribute("class", "valid");
   }
-}
+};
 
-function lastNameCheck() {
+lastNameCheck = () => {
   var nameInput = document.getElementById("lName").value;
   var lNameHighlight = document.querySelector("#lName");
 
@@ -46,9 +44,9 @@ function lastNameCheck() {
   } else {
     lNameHighlight.setAttribute("class", "valid");
   }
-}
+};
 
-function cNumberCheck() {
+cNumberCheck = () => {
   var numberValue = document.getElementById("cNumber").value;
   var cNumberHighlight = document.querySelector("#cNumber");
 
@@ -63,10 +61,10 @@ function cNumberCheck() {
   } else {
     cNumberHighlight.setAttribute("class", "valid");
   }
-}
+};
 
 // Check email for @
-function emailVerification() {
+emailVerification = () => {
   var emailInput = document.getElementById("email").value;
   var emailLabel = document.querySelector("#email");
 
@@ -76,24 +74,27 @@ function emailVerification() {
   } else {
     emailLabel.setAttribute("class", "valid");
   }
-}
+};
 
-// Code for age commenting
-// function ageCheck() {
-//   var ageValue = document.getElementById("number-label").value;
+ageCheck = () => {
+  var ageValue = document.getElementById("age").value;
+  var ageHighlight = document.querySelector("#age");
 
-//   if (isNaN(ageValue)) {
-//     alert("This isn't an age.");
-//     numberLabel.setAttribute("class", "invalid");
-//   } else if (ageValue == "") {
-//     alert("Please enter your cat age.");
-//     numberLabel.setAttribute("class", "invalid");
-//   } else if (ageValue > 38) {
-//     alert(
-//       "The oldest living cat, Creme Puff, is 38 years old. You have broken the record for oldest cat! "
-//     );
-//     numberLabel.setAttribute("class", "valid");
-//   } else {
-//     numberLabel.setAttribute("class", "valid");
-//   }
-// }
+  if (isNaN(ageValue)) {
+    alert("This isn't an age.");
+    ageHighlight.setAttribute("class", "invalid");
+  } else if (ageValue == "") {
+    alert("Please enter your age.");
+    ageHighlight.setAttribute("class", "invalid");
+  } else if (ageValue > 38) {
+    alert(
+      "The oldest living cat, Creme Puff, is 38 years old. You have broken the record for oldest cat! If you are a cat...."
+    );
+    ageHighlight.setAttribute("class", "valid");
+  } else if (ageValue > 38) {
+    alert("Are you really that old?");
+    ageHighlight.setAttribute("class", "valid");
+  } else {
+    ageHighlight.setAttribute("class", "valid");
+  }
+};
