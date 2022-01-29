@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.heroImage {
+  /* background-color: lightblue; */
+  background-image: url("https://media.istockphoto.com/photos/blue-ocean-view-panorama-picture-id186840575?k=20&m=186840575&s=612x612&w=0&h=zu5EiWJQEteyPbxp0jwYtF6g3q2sSzVgBP6zKr33zX4=");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 200px;
+}
+
+.portfolioHead {
+  color: black;
+  text-align: center;
+  font-size: 100px;
+  opacity: 0.7;
+  padding: 10px;
+}
+
+/* Navigation bar */
+
+ul {
+  text-align: center;
+}
+
+li {
+  color: #000000;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  padding: 16px;
+  margin: auto;
+  text-align: center !important;
+}
+
+nav li:hover {
+  background-color: rgb(56, 97, 230);
+}
+
+/* body */
+
+body {
+  padding: 0;
+}
+
+/* Portfolio  section */
+.portfolioContainer,
+.skillContainer {
+  display: flex;
+  background-color: rgb(162, 212, 253);
+  max-width: 100%;
+  padding: 50px;
+  border-top: 2px solid black;
+}
+
+.meContainer {
+  justify-content: right;
+  display: flex;
+  background-color: #6eabf0;
+  max-width: 100%;
+  padding: 50px;
+  border-top: 2px solid black;
+}
+
+.textContainer {
+  align-items: stretch;
+}
+
+/* About me section */
+
+.skillContainer {
+  background-color: #4a80c7;
+  /* margin: 0px 20px; */
+  padding: 50px;
+}
+
+/* Left */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imgContainerLeft {
+  text-align: center;
+
+  overflow: hidden;
+  margin-right: 25px;
+
+  flex-basis: 300px; /* Keeps the contaier fixed size of 300px*/
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.leftTitle {
+  font-size: 50px;
+  background-color: #023e8a;
+  text-align: center;
+  transform: rotate(17deg);
+  border: 1px solid black;
+  padding: 0px 20px;
+  width: fit-content;
+}
+
+p.leftContent {
+  margin-top: 25px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Right */
+
+.imgContainerRight {
+  text-align: center;
+
+  overflow: hidden;
+  margin-left: 25px;
+
+  flex-basis: 300px; /* Keeps the contaier fixed size */
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.rightTitle {
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p.rightContent {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Contact CSS*/
+
+.cmImgContainer {
+  height: 200px;
+  max-width: 100%;
+  background-color: rgb(104, 182, 255);
+  padding: 20px 0px 0px 0px;
+}
+
+.cmImg {
+  max-width: 100%;
+  height: 100%;
+  background-image: url("images/csBackImg.png");
+  background-repeat: no-repeat;
+}
+
+.msg1 {
+  font-size: 75px;
+  background-color: rgb(41, 72, 247);
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  transform: rotate(-20deg);
+  margin-left: 150px;
+  border: 1px solid black;
+}
+
+.msg2 {
+  font-size: 75px;
+  background-color: rgb(72, 156, 252);
+  width: 125px;
+  height: 100px;
+  text-align: center;
+  transform: rotate(25deg);
+  margin-left: 300px;
+  border: 1px solid black;
+}
+
+/* ====================================================================== */
+
+.contactDetailsContainer {
+  text-align: center;
+  line-height: 1.5;
+  background-color: rgb(72, 156, 252);
+  padding: 20px;
+
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.contactDetails {
+  padding: 20px 0px;
+  border: 3px dotted rgb(43, 62, 238);
+  border-radius: 25px;
+  background-color: rgb(99, 171, 253);
+}
+
+.socialMediaB {
+  margin: 20px 10px;
+}
+
+.contactUsContainer {
+  border-radius: 5px;
+  padding: 20px 100px;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -16px;
+}
+
+.col {
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* The below footer */
+.footer {
+  border-top: 2px solid black;
+  background-color: rgb(111, 170, 247);
+  width: 100%;
+  height: 150px;
+}
+
+.messageBox {
+  text-align: center;
+  padding: 15px;
+
+  margin: auto;
+  margin-top: 50px;
+
+  border-bottom: 4px solid rgb(37, 19, 138);
+
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgb(41, 72, 247);
+
+  width: 30%;
+}
+
+.coded {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
