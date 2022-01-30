@@ -95,72 +95,66 @@
 
     <!-- Image below navbar -->
   <section id="contactMe">
-    <div class="cmImgContainer">
-      <div class="cmImg">
-        <div class="rightBorder">
-          <div class="msg1">Contact</div>
-          <div class="msg2">Me</div>
+      <div class="cmImgContainer">
+        <div class="cmImg">
+          <div class=>
+            <div class="msg1">Contact</div>
+            <div class="msg2">Me</div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="contactDetailsContainer">
-      <div class="contactDetails">
-        <p>Know more about MrJay. Press <a href="https://sliceofjay.wordpress.com/">Here</a></p>
-        <p>Want to contact us? Press the icons below!!</p>
-      </div>
-        
-
-         <!-- Social media button  -->
-        <div class="socialMediaB">
-              
-          <a href="#" class="facebookLogo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" style="width:50px;height:50px;"></img></a>
-
-          <a href="#" class="twitterLogo">
-            <img src="https://pbs.twimg.com/profile_images/875087697177567232/Qfy0kRIP.jpg" style="width:50px;height:50px;"></img></a>
-
-          <a href="https://fi.linkedin.com/in/jere-cvl-540079123" class="linkedLogo">
-            <img src="https://cdn.modernghana.com/images/content/p73wnb0nmh_likedin.jpg" style="width:50px;height:50px;"></img></a>
-        </div>
-
-        <p>Can't reach us? Leave your contact details to us below.</p>
-        <p>We will get back to you ASAP.</p>
-
-
-        <!--Contact form details-->
-        <form class="contactUsContainer">
-
-         <div class="row">
-           
-            <div class="col">
-                <label for="fname">First Name</label>
-                <input type="text" id="fName" onblur="firstNameCheck()"  name="firstName" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lName" onblur="lastNameCheck()"  name="lastName" placeholder="Your last name.."
-                >
-                <label for="cname">Contact number</label>
-                <input type="text" id="cNumber" onblur="cNumberCheck()" name="contactNumber" placeholder="Your contact number..">
-
-                <label for="lname">Email</label>
-                <input type="text" id="email" onblur="emailVerification()" name="email" placeholder="Email..">       
-            </div>
-
-            
-            <div class="col">
-
-                <label for="age">Age</label>
-                <input type="text" id="age" onblur="ageCheck()" name="age" placeholder="How young are you"> 
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Hey you :)" style="height:200px"></textarea>
-                <input type="submit" value="Submit" onclick= "meowUs();">
-            </div>
-         </div>         
+    <div class="contactDetails">
+        <div class="contactDetailsContainer">
+            <p>Know more about MrJay. Press <a href="https://sliceofjay.wordpress.com/">Here</a></p>
+            <p>Want to contact us? Press the icons below!!</p>
           
-        </form>
-     </div>   
+            <!-- Social media button  -->
+            <div class="socialMediaB">
+              <a href="#" class="facebookLogo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg" style="width:50px;height:50px;"></img></a>
+
+              <a href="#" class="twitterLogo">
+                <img src="https://pbs.twimg.com/profile_images/875087697177567232/Qfy0kRIP.jpg" style="width:50px;height:50px;"></img></a>
+
+              <a href="https://fi.linkedin.com/in/jere-cvl-540079123" class="linkedLogo">
+                <img src="https://cdn.modernghana.com/images/content/p73wnb0nmh_likedin.jpg" style="width:50px;height:50px;"></img></a>
+            </div>
+
+            <p>Can't reach us? Leave your contact details to us below.</p>
+            <p>We will get back to you ASAP.</p>
+
+
+            <!--Contact form details-->
+            <form class="formContainer">
+                <div class="row">
+                  
+                    <div class="col">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fName" onblur="firstNameCheck()"  name="firstName" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lName" onblur="lastNameCheck()"  name="lastName" placeholder="Your last name.."
+                        >
+                        <label for="cname">Contact number</label>
+                        <input type="text" id="cNumber" onblur="cNumberCheck()" name="contactNumber" placeholder="Your contact number..">
+
+                        <label for="lname">Email</label>
+                        <input type="text" id="email" onblur="emailVerification()" name="email" placeholder="Email..">       
+                    </div>
+
+                    
+                    <div class="col">
+                        <label for="age">Age</label>
+                        <input type="text" id="age" onblur="ageCheck()" name="age" placeholder="How young are you"> 
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Hey you :)" style="height:200px"></textarea>
+                        <input type="submit" value="Submit" onclick= "meowUs();">
+                    </div>
+                </div>         
+            </form>
+        </div>
+    </div>    
   </section>
 
     <audio id="meow" src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/cats-meow-2_MktkaWEu.mp3"></audio>

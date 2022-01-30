@@ -182,30 +182,31 @@ p.rightContent {
 
 /* ====================================================================== */
 
+.contactDetails {
+  padding: 50px;
+  background-color: rgb(99, 171, 253);
+}
+
 .contactDetailsContainer {
   text-align: center;
   line-height: 1.5;
+
+  border: 2px dotted darkblue;
+  border-radius: 25px;
   background-color: rgb(72, 156, 252);
-  padding: 20px;
+  padding: 25px;
 
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.contactDetails {
-  padding: 20px 0px;
-  border: 3px dotted rgb(43, 62, 238);
-  border-radius: 25px;
-  background-color: rgb(99, 171, 253);
 }
 
 .socialMediaB {
   margin: 20px 10px;
 }
 
-.contactUsContainer {
+.formContainer {
   border-radius: 5px;
-  padding: 20px 100px;
+  padding: 20px 50px;
   text-align: left;
 }
 
@@ -220,19 +221,6 @@ p.rightContent {
   margin: auto;
   padding: 0 50px;
   margin-top: 6px;
-}
-
-/* Valid */
-.valid {
-  border: 2px solid lawngreen;
-  outline: forestgreen solid 2px;
-}
-
-/* Invalid */
-
-.invalid {
-  border: 2px solid pink;
-  outline: red solid 2px;
 }
 
 input[type="text"],
@@ -283,4 +271,18 @@ input[type="submit"]:hover {
   background-color: rgb(62, 95, 243);
 
   width: 30%;
+}
+
+/* Classes used by Javascript*/
+/* Valid */
+.valid {
+  border: 2px solid lawngreen;
+  outline: forestgreen solid 2px;
+}
+
+/* Invalid */
+
+.invalid {
+  border: 2px solid pink;
+  outline: red solid 2px;
 }
