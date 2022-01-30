@@ -261,7 +261,7 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-/* The below footer */
+/* Footer */
 .footer {
   border-top: 2px solid black;
   background-color: rgb(111, 170, 247);
@@ -270,6 +270,7 @@ input[type="submit"]:hover {
 }
 
 .messageBox {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: center;
   padding: 15px;
 
@@ -282,8 +283,4 @@ input[type="submit"]:hover {
   background-color: rgb(62, 95, 243);
 
   width: 30%;
-}
-
-.coded {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
