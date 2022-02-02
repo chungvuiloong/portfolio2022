@@ -73,14 +73,6 @@ body {
   align-items: stretch;
 }
 
-/* About me section */
-
-.skillContainer {
-  background-color: #4a80c7;
-  /* margin: 0px 20px; */
-  padding: 50px;
-}
-
 /* Left */
 
 img {
@@ -101,7 +93,7 @@ img {
 
 .leftTitle {
   font-size: 50px;
-  background-color: #023e8a;
+  background-color: #6eabf0;
   text-align: center;
   transform: rotate(17deg);
   border: 1px solid black;
