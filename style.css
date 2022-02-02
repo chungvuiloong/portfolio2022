@@ -149,6 +149,7 @@ p.rightContent {
   max-width: 100%;
   background-color: rgb(104, 182, 255);
   padding: 20px 0px 0px 0px;
+  border-top: 2px solid black;
 }
 
 .cmImg {
@@ -166,7 +167,7 @@ p.rightContent {
   text-align: center;
   transform: rotate(-20deg);
   margin-left: 150px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .msg2 {
@@ -177,12 +178,13 @@ p.rightContent {
   text-align: center;
   transform: rotate(25deg);
   margin-left: 300px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 /* ====================================================================== */
 
 .contactDetails {
+  border-top: 2px solid black;
   padding: 50px;
   background-color: rgb(99, 171, 253);
 }
@@ -191,7 +193,7 @@ p.rightContent {
   text-align: center;
   line-height: 1.5;
 
-  border: 2px dotted darkblue;
+  border: 3px dashed darkblue;
   border-radius: 25px;
   background-color: rgb(72, 156, 252);
   padding: 25px;
@@ -271,6 +273,13 @@ input[type="submit"]:hover {
   background-color: rgb(62, 95, 243);
 
   width: 30%;
+}
+
+.copyright {
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
+  margin: 20px;
 }
 
 /* Classes used by Javascript*/
