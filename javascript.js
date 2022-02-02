@@ -21,7 +21,7 @@ firstNameCheck = () => {
     alert("This is a number. Not a name.");
     fNameHighlight.setAttribute("class", "invalid");
   } else if (!nameInput.match(letterFilter)) {
-    alert("There is a number in your name?!");
+    alert("You have a number in your first name?!");
     fNameHighlight.setAttribute("class", "invalid");
   } else {
     fNameHighlight.setAttribute("class", "valid");
@@ -39,7 +39,7 @@ lastNameCheck = () => {
     alert("This is a number. Not a name.");
     lNameHighlight.setAttribute("class", "invalid");
   } else if (!nameInput.match(letterFilter)) {
-    alert("There is a number in your name?!");
+    alert("You have a number in your last name?!");
     lNameHighlight.setAttribute("class", "invalid");
   } else {
     lNameHighlight.setAttribute("class", "valid");
