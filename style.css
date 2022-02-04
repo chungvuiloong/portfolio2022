@@ -63,7 +63,7 @@ body {
 .meContainer {
   justify-content: right;
   display: flex;
-  background-color: #6eabf0;
+  background-color: #68b6ff;
   max-width: 100%;
   padding: 50px;
   border-top: 2px solid black;
@@ -153,7 +153,7 @@ p.rightContent {
 
 .msg1 {
   font-size: 75px;
-  background-color: rgb(41, 72, 247);
+  background-color: #2948f7;
   width: 300px;
   height: 100px;
   text-align: center;
@@ -164,7 +164,7 @@ p.rightContent {
 
 .msg2 {
   font-size: 75px;
-  background-color: rgb(72, 156, 252);
+  background-color: #489cfc;
   width: 125px;
   height: 100px;
   text-align: center;
@@ -185,7 +185,7 @@ p.rightContent {
   text-align: center;
   line-height: 1.5;
 
-  border: 3px dashed darkblue;
+  border: 3px dashed #2948f7;
   border-radius: 25px;
   background-color: rgb(72, 156, 252);
   padding: 25px;
@@ -262,7 +262,7 @@ input[type="submit"]:hover {
   border-bottom: 4px solid rgb(37, 19, 138);
 
   border-radius: 20px 20px 20px 20px;
-  background-color: rgb(62, 95, 243);
+  background-color: #3e5ff3;
 
   width: 30%;
 }
@@ -272,18 +272,4 @@ input[type="submit"]:hover {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: center;
   margin: 20px;
-}
-
-/* Classes used by Javascript*/
-/* Valid */
-.valid {
-  border: 2px solid lawngreen;
-  outline: forestgreen solid 2px;
-}
-
-/* Invalid */
-
-.invalid {
-  border: 2px solid pink;
-  outline: red solid 2px;
 }

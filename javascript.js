@@ -63,7 +63,7 @@ cNumberCheck = () => {
   }
 };
 
-// Check email for @
+// Check email for @ and .
 emailVerification = () => {
   var emailInput = document.getElementById("email").value;
   var emailLabel = document.querySelector("#email");
