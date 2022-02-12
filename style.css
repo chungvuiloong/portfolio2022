@@ -274,10 +274,10 @@ input[type="submit"]:hover {
   margin: 20px;
 }
 
-input:invalid {
+.invalid {
   border: 2px solid red;
 }
 
-input:valid {
+.valid {
   border: 2px solid rgb(24, 155, 52);
 }
