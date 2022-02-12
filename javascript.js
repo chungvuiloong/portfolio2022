@@ -12,33 +12,33 @@ meowUs = () => {
 
 firstNameCheck = () => {
   var nameInput = document.getElementById("fName").value;
-  var fNameHighlight = document.querySelector("#fName");
+  var fName = document.querySelector("#fName");
 
   if (nameInput == "") {
     alert("Please enter a name");
-    fNameHighlight.setAttribute("class", "invalid");
+    fName.setAttribute("class", "invalid");
   } else if (nameInput.match(numberFilter)) {
     alert("This is a number. Not a name.");
-    fNameHighlight.setAttribute("class", "invalid");
+    fName.setAttribute("class", "invalid");
   } else if (!nameInput.match(letterFilter)) {
     alert("You have a number in your first name?!");
-    fNameHighlight.setAttribute("class", "invalid");
+    fName.setAttribute("class", "invalid");
   } else {
-    fNameHighlight.setAttribute("class", "valid");
+    fName.setAttribute("class", "valid");
   }
 };
 
 lastNameCheck = () => {
-  var nameInput = document.getElementById("lName").value;
+  var lNameInput = document.getElementById("lName").value;
   var lNameHighlight = document.querySelector("#lName");
 
-  if (nameInput == "") {
+  if (lNameInput == "") {
     alert("Please enter a name");
     lNameHighlight.setAttribute("class", "invalid");
-  } else if (nameInput.match(numberFilter)) {
+  } else if (lNameInput.match(numberFilter)) {
     alert("This is a number. Not a name.");
     lNameHighlight.setAttribute("class", "invalid");
-  } else if (!nameInput.match(letterFilter)) {
+  } else if (!lNameInput.match(letterFilter)) {
     alert("You have a number in your last name?!");
     lNameHighlight.setAttribute("class", "invalid");
   } else {
@@ -98,5 +98,3 @@ ageCheck = () => {
     ageHighlight.setAttribute("class", "valid");
   }
 };
-
-// Facebook Plugin
