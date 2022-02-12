@@ -11,7 +11,7 @@ meowUs = () => {
 };
 
 firstNameCheck = () => {
-  var nameInput = document.getElementById("fName").value;
+  var nameInput = document.querySelector("#fName").value;
   var fName = document.querySelector("#fName");
 
   if (nameInput == "") {
@@ -29,43 +29,43 @@ firstNameCheck = () => {
 };
 
 lastNameCheck = () => {
-  var lNameInput = document.getElementById("lName").value;
-  var lNameHighlight = document.querySelector("#lName");
+  var lNameInput = document.querySelector("#lName").value;
+  var lName = document.querySelector("#lName");
 
   if (lNameInput == "") {
     alert("Please enter a name");
-    lNameHighlight.setAttribute("class", "invalid");
+    lName.setAttribute("class", "invalid");
   } else if (lNameInput.match(numberFilter)) {
     alert("This is a number. Not a name.");
-    lNameHighlight.setAttribute("class", "invalid");
+    lName.setAttribute("class", "invalid");
   } else if (!lNameInput.match(letterFilter)) {
     alert("You have a number in your last name?!");
-    lNameHighlight.setAttribute("class", "invalid");
+    lName.setAttribute("class", "invalid");
   } else {
-    lNameHighlight.setAttribute("class", "valid");
+    lName.setAttribute("class", "valid");
   }
 };
 
 cNumberCheck = () => {
-  var numberValue = document.getElementById("cNumber").value;
-  var cNumberHighlight = document.querySelector("#cNumber");
+  var numberValue = document.querySelector("#fName").value;
+  var cNumber = document.querySelector("#cNumber");
 
   if (numberValue == "") {
     alert(
       "Come on now. How can we contact you if we don't have your contact number."
     );
-    cNumberHighlight.setAttribute("class", "invalid");
+    cNumber.setAttribute("class", "invalid");
   } else if (numberValue.match(letterFilter)) {
     alert("There are alphabets in your contact number?!");
-    cNumberHighlight.setAttribute("class", "invalid");
+    cNumber.setAttribute("class", "invalid");
   } else {
-    cNumberHighlight.setAttribute("class", "valid");
+    cNumber.setAttribute("class", "valid");
   }
 };
 
 // Check email for @ and .
 emailVerification = () => {
-  var emailInput = document.getElementById("email").value;
+  var emailInput = document.querySelector("#email").value;
   var emailLabel = document.querySelector("#email");
 
   if (!emailInput.match(emailFilter)) {
@@ -77,7 +77,7 @@ emailVerification = () => {
 };
 
 ageCheck = () => {
-  var ageValue = document.getElementById("age").value;
+  var ageValue = document.querySelector("#age").value;
   var ageHighlight = document.querySelector("#age");
 
   if (isNaN(ageValue)) {

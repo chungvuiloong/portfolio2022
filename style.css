@@ -274,7 +274,9 @@ input[type="submit"]:hover {
   margin: 20px;
 }
 
+/* ====================================================================== */
 /* Classes used by Javascript*/
+
 /* Valid */
 .valid {
   border: 2px solid lawngreen;
