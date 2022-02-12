@@ -273,3 +273,11 @@ input[type="submit"]:hover {
   text-align: center;
   margin: 20px;
 }
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid rgb(24, 155, 52);
+}
