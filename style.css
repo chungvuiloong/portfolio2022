@@ -274,10 +274,16 @@ input[type="submit"]:hover {
   margin: 20px;
 }
 
-.invalid {
-  border: 2px solid red;
+/* Classes used by Javascript*/
+/* Valid */
+.valid {
+  border: 2px solid lawngreen;
+  outline: forestgreen solid 2px;
 }
 
-.valid {
-  border: 2px solid rgb(24, 155, 52);
+/* Invalid */
+
+.invalid {
+  border: 2px solid pink;
+  outline: red solid 2px;
 }
