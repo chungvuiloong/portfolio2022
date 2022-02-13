@@ -40,6 +40,10 @@ li {
   text-align: center !important;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav li:hover {
   background-color: rgb(56, 97, 230);
 }
