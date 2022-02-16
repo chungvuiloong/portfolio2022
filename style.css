@@ -4,8 +4,11 @@
   box-sizing: 0;
 }
 
+html {
+  width: 100%;
+}
+
 .heroImage {
-  /* background-color: lightblue; */
   background-image: url("https://media.istockphoto.com/photos/blue-ocean-view-panorama-picture-id186840575?k=20&m=186840575&s=612x612&w=0&h=zu5EiWJQEteyPbxp0jwYtF6g3q2sSzVgBP6zKr33zX4=");
   height: 500px;
   background-position: center;
@@ -52,12 +55,13 @@ nav li:hover {
 
 body {
   padding: 0;
+  width: 100%;
 }
 
 /* Portfolio  section */
 .portfolioContainer,
 .skillContainer {
-  display: flex;
+  display: flex; /* This causes issues in mobile browsers */
   background-color: rgb(162, 212, 253);
   max-width: 100%;
   padding: 50px;
@@ -65,7 +69,6 @@ body {
 }
 
 .meContainer {
-  justify-content: right;
   display: flex;
   background-color: #68b6ff;
   max-width: 100%;
