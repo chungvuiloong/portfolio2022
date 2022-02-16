@@ -39,7 +39,6 @@ ul {
 li {
   color: #000000;
   font-size: 17px;
-  font-family: "Courier New", Courier, monospace;
   display: inline-block;
   padding: 16px;
   margin: auto;
@@ -157,26 +156,46 @@ p.rightContent {
   background-repeat: no-repeat;
 }
 
-.msg1 {
+.msg1Container {
   font-size: 75px;
   background-color: #2948f7;
-  width: 300px;
+  width: 5em;
   height: 100px;
   text-align: center;
   transform: rotate(-20deg);
   margin-left: 150px;
   border: 2px solid black;
+  padding: 0px 20px;
 }
 
-.msg2 {
+.msg2Container {
   font-size: 75px;
   background-color: #489cfc;
-  width: 125px;
+  width: 2.5em;
   height: 100px;
   text-align: center;
   transform: rotate(25deg);
   margin-left: 300px;
   border: 2px solid black;
+
+  padding: 0px 20px;
+}
+
+@media (max-device-width: 390px) {
+  .msg1Container {
+    justify-content: center;
+    text-align: center;
+    font-size: 4.5em;
+    background-color: #489cfc;
+    width: 3.5em;
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .msg2Container {
+    background-color: lightblue;
+  }
 }
 
 /* ====================================================================== */
@@ -197,7 +216,6 @@ p.rightContent {
   padding: 25px;
 
   font-size: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .socialMediaB {
@@ -258,7 +276,6 @@ footer {
 }
 
 .messageBox {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: center;
   padding: 15px;
 
