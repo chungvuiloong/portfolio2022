@@ -19,13 +19,13 @@ body {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .portfolioHead {
   color: black;
   text-align: center;
-  font-size: 100px;
+  font-size: 6.25em;
   opacity: 0.7;
   padding: 10px;
 }
@@ -156,11 +156,15 @@ p.rightContent {
   background-repeat: no-repeat;
 }
 
+.totalMsgContainer {
+  padding: 20px;
+}
+
 .msg1Container {
   font-size: 75px;
   background-color: #2948f7;
-  width: 5em;
   height: 100px;
+  width: 20%;
   text-align: center;
   transform: rotate(-20deg);
   margin-left: 150px;
@@ -168,10 +172,13 @@ p.rightContent {
   padding: 0px 20px;
 }
 
+.msg1 {
+  display: inline-block;
+}
+
 .msg2Container {
   font-size: 75px;
   background-color: #489cfc;
-  width: 2.5em;
   height: 100px;
   text-align: center;
   transform: rotate(25deg);
@@ -181,32 +188,36 @@ p.rightContent {
   padding: 0px 20px;
 }
 
-@media (max-device-width: 390px) {
-  .msg1Container {
-    justify-content: center;
+@media (max-device-width: 480px) {
+  .portfolioHead {
+    color: black;
     text-align: center;
-    font-size: 4.5em;
-    background-color: #489cfc;
-    width: 3.5em;
+    font-size: 6.25em;
+    opacity: 0.7;
+    padding: 10px;
+  }
+
+  .msg1Container {
     margin-left: 100px;
   }
-}
 
-@media only screen and (max-device-width: 480px) {
+  .msg1 {
+    font-size: 1em;
+  }
+
   .msg2Container {
-    background-color: lightblue;
+    background-color: rgb(230, 182, 173);
   }
 }
-
 /* ====================================================================== */
 
-.contactDetails {
+.contactDetailsContainer {
   border-top: 2px solid black;
   padding: 50px;
   background-color: rgb(99, 171, 253);
 }
 
-.contactDetailsContainer {
+.contactDetails {
   text-align: center;
   line-height: 1.5;
 
@@ -214,7 +225,6 @@ p.rightContent {
   border-radius: 25px;
   background-color: rgb(72, 156, 252);
   padding: 25px;
-
   font-size: 20px;
 }
 
