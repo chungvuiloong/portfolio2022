@@ -15,14 +15,13 @@
     <title>Jere Portfolio</title>
   </head>
 
-  <body>
+  <body class="rellax">
     <!-- Nav bar -->
     <header>
       <section id="heroContainer">
-        <div class="heroImage">
+        <div class="heroImage rellax" data-rellax-speed="-5">
           <div class="heroText">
             <h1 class="portfolioHead">Jere Portfolio</h1>
-
             <nav>
               <ul>
                 <li>
@@ -49,7 +48,7 @@
               </ul>
             </nav>
           </div>
-        </div>
+        
       </section>
     </header>
 
@@ -190,7 +189,7 @@
                   id="subject"
                   name="subject"
                   placeholder="Hey you :)"
-                  style="height: 200px"
+                  style="height: 165px"
                 ></textarea>
                 <input type="submit" value="Submit" onclick="meowUs();" />
               </div>
@@ -237,11 +236,17 @@
       })(document, "script", "facebook-jssdk");
     </script>
 
+    <!-- JS Files link -->
     <script src="javascript.js"></script>
     <script
       src="https://kit.fontawesome.com/992a8ac3cf.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+      // Accepts any class name
+      var rellax = new Rellax(".rellax");
+    </script>
   </body>
   <!-- footer -->
   <footer>

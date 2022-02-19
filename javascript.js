@@ -98,3 +98,7 @@ ageCheck = () => {
     ageHighlight.setAttribute("class", "valid");
   }
 };
+
+// CSS Related
+
+var rellax = new Rellax(".rellax");
