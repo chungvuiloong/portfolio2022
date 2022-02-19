@@ -6,18 +6,20 @@
 
 html,
 body {
-  /* overflow-x: hidden;
+  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  background-image: url("https://img.freepik.com/free-vector/tropical-landscape-with-sea-bay-night_107791-5364.jpg?t=st=1645275614~exp=1645276214~hmac=d7acd973550d739521a0bc4352c91bde11be70f2adcb6d1c853b510f74295f6c&w=2000");
-  background-size: cover;
-  background-attachment: fixed;
-  justify-content: center;
-  align-items: center; */
+  scroll-behavior: smooth;
+  background-color: green;
+}
+
+#heroContainer {
+  position: relative;
+  overflow: hidden;
 }
 
 .heroImage {
   background-image: url("https://img.freepik.com/free-vector/tropical-landscape-with-sea-bay-night_107791-5364.jpg?t=st=1645275614~exp=1645276214~hmac=d7acd973550d739521a0bc4352c91bde11be70f2adcb6d1c853b510f74295f6c&w=2000");
-  height: 700px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,6 +33,8 @@ body {
   font-size: 6.25em;
   opacity: 0.7;
   padding: 10px;
+
+  text-shadow: 1px 1px 10px white;
 }
 
 /* Navigation bar */
@@ -59,14 +63,37 @@ nav li:hover {
 /* body */
 
 /* Portfolio  section */
-.portfolioContainer,
+
+.underSea {
+  height: 100vh;
+  margin-top: -140px;
+  background: linear-gradient(#00dcda, #039bca);
+}
+
+h1 {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .portfolioContainer,
 .skillContainer {
-  display: flex; /* This causes issues in mobile browsers */
+  display: flex; This causes issues in mobile browsers
   background-color: rgb(162, 212, 253);
   max-width: 100%;
   padding: 50px;
   border-top: 2px solid black;
-}
+} */
 
 .meContainer {
   display: flex;
@@ -241,7 +268,7 @@ p.rightContent {
   }
 
   footer {
-    height: 23vh !important;
+    /* height: 23vh !important; */
   }
 }
 /* ====================================================================== */
@@ -315,16 +342,25 @@ input[type="submit"]:hover {
 footer {
   border-top: 2px solid black;
   background-color: rgb(111, 170, 247);
-  width: 100%;
-  height: 25vh;
+  height: 60vh;
+  background-image: url("https://img.freepik.com/free-vector/treasure-sea-bottom-chest-with-golden-coins-crown-crystal-gems-sword-gold-idol-goblet-with-precious-rocks_107791-5247.jpg?t=st=1645284682~exp=1645285282~hmac=edfb6df66d45491ea9ba2e5644b0bb99ed76471ae8939889b4bb0cb31d28721e&w=1800");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
 }
+
+/* .footerBackground {
+  background-image: url("https://img.freepik.com/free-vector/treasure-sea-bottom-chest-with-golden-coins-crown-crystal-gems-sword-gold-idol-goblet-with-precious-rocks_107791-5247.jpg?t=st=1645284682~exp=1645285282~hmac=edfb6df66d45491ea9ba2e5644b0bb99ed76471ae8939889b4bb0cb31d28721e&w=1800");
+} */
 
 .messageBox {
   text-align: center;
   padding: 15px;
 
   margin: auto;
-  margin-top: 50px;
+  margin-top: 75px;
 
   border-bottom: 4px solid rgb(37, 19, 138);
 
