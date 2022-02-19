@@ -194,12 +194,16 @@ p.rightContent {
   margin: auto;
 }
 
-@media (max-device-width: 450px) {
+@media only screen and (max-device-width: 450px) {
   .portfolioHead {
     color: black;
     text-align: center;
     font-size: 5em;
     opacity: 0.7;
+  }
+
+  .formContainer {
+    padding: 0px 10px !important;
   }
 
   .msg1Container {
@@ -226,13 +230,11 @@ p.rightContent {
   }
   .row {
     display: block !important;
-    flex-direction: none;
-    margin: 0px -50px !important;
   }
 
   .col {
     width: 100% !important;
-    padding: 0px !important;
+    padding: 0px 45px !important;
   }
 
   footer {
@@ -264,19 +266,17 @@ p.rightContent {
 
 .formContainer {
   border-radius: 5px;
-  padding: 20px 50px;
   text-align: left;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  margin: 0 -16px;
 }
 
 .col {
   width: 50%;
-  padding: 0 50px;
+  padding: 0 25px;
   margin-top: 6px;
 }
 
