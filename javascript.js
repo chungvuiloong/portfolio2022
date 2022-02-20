@@ -99,6 +99,28 @@ ageCheck = () => {
   }
 };
 
+////// Testing
+
+window.onscroll = function () {
+  scrollAnimation();
+  scrollFadeOut();
+};
+
+const scrollAnimation = () => {
+  const classCont = document.querySelector(".textContainer");
+  // const test = document.querySelector(".testing");
+
+  if (
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
+  ) {
+    classCont.classList.add("visible");
+    classCont.style.display = "block";
+  } else {
+    classCont.style.display = "none";
+  }
+};
+
 // CSS Related
 
 var rellax = new Rellax(".rellax");

@@ -33,7 +33,6 @@ body {
   font-size: 6.25em;
   opacity: 0.7;
   padding: 10px;
-
   text-shadow: 1px 1px 10px white;
 }
 
@@ -63,15 +62,15 @@ nav li:hover {
 /* body */
 
 /* Portfolio  section */
-
 .underSea {
   height: 100vh;
   margin-top: -140px;
   background: linear-gradient(#00dcda, #039bca);
+  padding: 100px 25px 0px 25px;
 }
 
-h1 {
-  animation: fadeIn 5s;
+.fadeIn {
+  animation: fadeIn 1s;
 }
 
 @keyframes fadeIn {
@@ -84,6 +83,26 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+
+.fadeOut {
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.testing {
+  display: none;
 }
 
 /* .portfolioContainer,
@@ -104,7 +123,8 @@ h1 {
 }
 
 .textContainer {
-  align-items: stretch;
+  /* align-items: stretch; */
+  display: none;
 }
 
 /* Left */
@@ -128,7 +148,7 @@ img {
 
 .leftTitle {
   font-size: 50px;
-  background-color: #6eabf0;
+  background-color: #006091;
   text-align: center;
   transform: rotate(350deg);
   border: 1px solid black;
