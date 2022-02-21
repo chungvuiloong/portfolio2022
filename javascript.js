@@ -103,7 +103,6 @@ ageCheck = () => {
 
 window.onscroll = function () {
   scrollAnimation();
-  scrollFadeOut();
 };
 
 const scrollAnimation = () => {

@@ -18,7 +18,7 @@ body {
 }
 
 .heroImage {
-  background-image: url("https://img.freepik.com/free-vector/tropical-landscape-with-sea-bay-night_107791-5364.jpg?t=st=1645275614~exp=1645276214~hmac=d7acd973550d739521a0bc4352c91bde11be70f2adcb6d1c853b510f74295f6c&w=2000");
+  background-image: url("images/darkNight.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -364,11 +364,19 @@ footer {
   background-color: rgb(111, 170, 247);
   height: 60vh;
   background-image: url("https://img.freepik.com/free-vector/treasure-sea-bottom-chest-with-golden-coins-crown-crystal-gems-sword-gold-idol-goblet-with-precious-rocks_107791-5247.jpg?t=st=1645284682~exp=1645285282~hmac=edfb6df66d45491ea9ba2e5644b0bb99ed76471ae8939889b4bb0cb31d28721e&w=1800");
-  background-position: center;
+
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   align-items: center;
+  bottom: 0;
+
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center; */
 }
 
 /* .footerBackground {
