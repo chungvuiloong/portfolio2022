@@ -18,13 +18,23 @@ body {
 }
 
 .heroImage {
-  background-image: url("images/darkNightBg.png");
+  background-image: url("images/nightStars.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   align-items: center;
+}
+
+.whiteMoon {
+  margin: auto;
+  position: absolute;
+}
+
+.backMountain {
+  position: absolute;
+  margin-top: 20px;
 }
 
 .portfolioHead {
