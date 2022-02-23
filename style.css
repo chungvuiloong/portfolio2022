@@ -12,8 +12,13 @@ body {
   height: 100%;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  color: #fff;
   background-color: #000;
+}
+
+.sticky {
+  top: 0;
+  position: sticky !important;
+  color: white;
 }
 
 /* Header */
@@ -21,14 +26,18 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  align-items: flex-start;
 }
+
 nav .portFolioTitle {
-  color: black;
+  top: 0;
+  width: 100%;
+  color: white;
   text-align: center;
-  font-size: 6.25em;
+  font-size: 5.25em;
   opacity: 0.7;
-  padding: 10px;
-  text-shadow: 1px 1px 10px white;
+  object-fit: contain;
+  display: sticky;
 }
 
 .navContainer {
@@ -39,7 +48,7 @@ nav .portFolioTitle {
 }
 
 li {
-  color: #000000;
+  color: #ffffff;
   font-size: 1em;
   display: inline-block;
   padding: 16px;
@@ -49,6 +58,7 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 nav li:hover {
@@ -110,9 +120,7 @@ nav li:hover {
 /* Portfolio  section */
 .underSea {
   height: 100vh;
-  margin-top: -140px;
   background: linear-gradient(#00dcda, #039bca);
-  padding: 100px 25px 0px 25px;
 }
 
 .fadeIn {
