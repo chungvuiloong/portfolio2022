@@ -119,7 +119,3 @@ const scrollAnimation = () => {
     classCont.style.display = "none";
   }
 };
-
-// CSS Related
-
-var rellax = new Rellax(".rellax");
