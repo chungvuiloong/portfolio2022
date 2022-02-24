@@ -438,7 +438,7 @@ input[type="submit"]:hover {
 }
 
 /* Footer */
-footer {
+/* footer {
   border-top: 2px solid black;
   background-color: rgb(111, 170, 247);
   height: 60vh;
@@ -450,17 +450,28 @@ footer {
   justify-content: center;
   align-items: center;
   bottom: 0;
+} */
 
-  /* background-position: center;
+/* .footerContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  object-fit: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
+} */
+
+.layer-parent .treasureChest {
+  position: absolute;
 }
 
-/* .footerBackground {
-  background-image: url("https://img.freepik.com/free-vector/treasure-sea-bottom-chest-with-golden-coins-crown-crystal-gems-sword-gold-idol-goblet-with-precious-rocks_107791-5247.jpg?t=st=1645284682~exp=1645285282~hmac=edfb6df66d45491ea9ba2e5644b0bb99ed76471ae8939889b4bb0cb31d28721e&w=1800");
-} */
+.layer-parent .chalice {
+  position: absolute;
+}
 
 .messageBox {
   text-align: center;

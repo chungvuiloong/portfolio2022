@@ -3,17 +3,29 @@ var numberFilter = /^[0-9]+$/;
 var emailFilter =
   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-// Animation for hero banner
+// Parallex for hero banner
 let darkSky = document.querySelector("#darkSky");
 let stars = document.querySelector("#stars");
 let moon = document.querySelector("#whiteMoon");
 let meteor = document.querySelector("#meteor");
 let backMountains = document.querySelector("#backMountains");
 let bottomCloud = document.querySelector("#bottomCloud");
+// let waveBack = document.querySelector("#wave-back");
+// let waveFront = document.querySelector("#wave-front");
 
-let waveBack = document.querySelector("#wave-back");
-let waveFront = document.querySelector("#wave-front");
+//Parallex for footer
+let footer = document.querySelector("#footerContainer");
+let treasureChest = document.querySelector("#treasureChest");
+let chalice = document.querySelector("#chalice");
 
+footer.onmousemove = function (e) {
+  let x = e.clientX;
+  let y = e.clientY;
+
+  treasureChest.style.transform = "translateX(" + (x / 100) * -7 + "px)";
+};
+
+/////
 window.addEventListener("scroll", () => {
   let yPosition = window.scrollY;
 
