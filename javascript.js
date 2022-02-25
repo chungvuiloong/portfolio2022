@@ -13,18 +13,6 @@ let bottomCloud = document.querySelector("#bottomCloud");
 // let waveBack = document.querySelector("#wave-back");
 // let waveFront = document.querySelector("#wave-front");
 
-//Parallex for footer
-let footer = document.querySelector("#footerContainer");
-let treasureChest = document.querySelector("#treasureChest");
-let chalice = document.querySelector("#chalice");
-
-footer.onmousemove = function (e) {
-  let x = e.clientX;
-  let y = e.clientY;
-
-  treasureChest.style.transform = "translateX(" + (x / 100) * -7 + "px)";
-};
-
 /////
 window.addEventListener("scroll", () => {
   let yPosition = window.scrollY;
