@@ -10,8 +10,6 @@ let moon = document.querySelector("#whiteMoon");
 let meteor = document.querySelector("#meteor");
 let backMountains = document.querySelector("#backMountains");
 let bottomCloud = document.querySelector("#bottomCloud");
-// let waveBack = document.querySelector("#wave-back");
-// let waveFront = document.querySelector("#wave-front");
 
 /////
 window.addEventListener("scroll", () => {
