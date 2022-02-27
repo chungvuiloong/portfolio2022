@@ -130,6 +130,7 @@ nav li:hover {
   height: 100vh;
   background: linear-gradient(#00dcda, #039bca);
   object-fit: contain;
+  padding: 20px 0px;
 }
 
 .fadeIn {
