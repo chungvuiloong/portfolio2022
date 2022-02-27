@@ -129,6 +129,7 @@ nav li:hover {
 .underSea {
   height: 100vh;
   background: linear-gradient(#00dcda, #039bca);
+  object-fit: contain;
 }
 
 .fadeIn {
