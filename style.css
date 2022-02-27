@@ -4,7 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* color: black; */
+}
+
+:root {
+  color-scheme: dark;
 }
 
 html,
@@ -16,11 +19,16 @@ body {
   background-color: #000;
 }
 
+/* testing sticky */
 /* .sticky {
   top: 0;
   position: sticky !important;
   color: white;
 } */
+
+titleContainer {
+  overflow: hidden;
+}
 
 /* Header */
 .headContainer {
@@ -31,14 +39,13 @@ body {
 }
 
 nav .portFolioTitle {
+  color: white;
   top: 0;
   width: 100%;
-  /* color: white; */
   text-align: center;
   font-size: 5.25em;
   opacity: 0.7;
-  object-fit: contain;
-  display: sticky;
+  /* object-fit: contain; */
 }
 
 .navContainer {
@@ -49,7 +56,7 @@ nav .portFolioTitle {
 }
 
 li {
-  /* color: #ffffff; */
+  color: #ffffff;
   font-size: 1em;
   display: inline-block;
   padding: 16px;
@@ -160,15 +167,6 @@ nav li:hover {
   display: none;
 }
 
-/* .portfolioContainer,
-.skillContainer {
-  display: flex; This causes issues in mobile browsers
-  background-color: rgb(162, 212, 253);
-  max-width: 100%;
-  padding: 50px;
-  border-top: 2px solid black;
-} */
-
 .meContainer {
   display: flex;
   background-color: #68b6ff;
@@ -178,7 +176,6 @@ nav li:hover {
 }
 
 .textContainer {
-  /* align-items: stretch; */
   display: none;
 }
 
@@ -252,7 +249,6 @@ p.rightContent {
 
 .logoSpace {
   justify-content: space-evenly;
-  /* align-items: center; */
 }
 
 .logoText {
