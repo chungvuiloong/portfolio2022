@@ -127,7 +127,7 @@ nav li:hover {
 
 /* Portfolio  section */
 .underSea {
-  height: 100vh;
+  /* height: 100vh; */
   background: linear-gradient(#00dcda, #039bca);
   object-fit: contain;
   padding: 20px 0px;
@@ -439,7 +439,7 @@ footer {
   border-top: 2px solid black;
   background-color: rgb(111, 170, 247);
   height: 60vh;
-  background-image: url("https://img.freepik.com/free-vector/treasure-sea-bottom-chest-with-golden-coins-crown-crystal-gems-sword-gold-idol-goblet-with-precious-rocks_107791-5247.jpg?t=st=1645284682~exp=1645285282~hmac=edfb6df66d45491ea9ba2e5644b0bb99ed76471ae8939889b4bb0cb31d28721e&w=1800");
+  background-image: url("images/treasure.jpg");
 
   background-position: center bottom;
   background-repeat: no-repeat;
