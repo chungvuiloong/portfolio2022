@@ -44,7 +44,7 @@ nav .portFolioTitle {
   width: 100%;
   text-align: center;
   font-size: 5.25em;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   /* object-fit: contain; */
 }
 
@@ -110,7 +110,7 @@ nav li:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 0px auto 0px auto;
+  margin: 0px auto;
 }
 
 .layer-parent .stars {
@@ -439,7 +439,7 @@ footer {
   border-top: 2px solid black;
   background-color: rgb(111, 170, 247);
   height: 60vh;
-  background-image: url("images/treasure.jpg");
+  background-image: url("images/trench.png");
 
   background-position: center bottom;
   background-repeat: no-repeat;

@@ -28,9 +28,8 @@ window.addEventListener("scroll", () => {
 
 // Press Submit and it meows
 meowUs = () => {
-  // 1st Prototype - Works!!! BUt need to get ID from HTML
+  // 1st Prototype - Works!!! But need to get ID from HTML
   // var meow = document.getElementById("meow");
-
   meow.play() + alert("Thank you for meowing us! We will meow back ASAP!");
 };
 
