@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
 * {
   margin: 0;
@@ -127,14 +128,50 @@ nav li:hover {
 
 /* Portfolio  section */
 .underSea {
-  /* height: 100vh; */
+  height: fit-content;
   background: linear-gradient(#00dcda, #039bca);
-  object-fit: contain;
   padding: 20px 0px;
 }
 
-.fadeIn {
+.portfolioContainer .fadeIn {
   animation: fadeIn 1s;
+}
+
+.portfolioContainer {
+  height: 15em;
+  width: 20em;
+  background: lightblue;
+  color: black;
+  margin: 4em auto;
+  text-align: left;
+  border: 1px solid black;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolioContainer div {
+  margin: 10px 20px 10px 20px;
+  font-size: 1.25em;
+}
+
+.portfolioContainer div.text {
+  /* width: fit-content; */
+  width: 23em;
+  border: 2px solid #006091;
+}
+
+.portfolioContainer div.portfolioTitle {
+  font-weight: 900;
+}
+
+.portfolioContainer div.portfolioDescription {
+  font-style: italic;
 }
 
 @keyframes fadeIn {
@@ -165,10 +202,6 @@ nav li:hover {
   }
 }
 
-.testing {
-  display: none;
-}
-
 .meContainer {
   display: flex;
   background-color: #68b6ff;
@@ -182,23 +215,6 @@ nav li:hover {
 }
 
 /* Left */
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.imgContainerPortfolio {
-  border: 2px solid black;
-  text-align: center;
-
-  overflow: hidden;
-  margin: 25px;
-
-  flex-basis: 300px; /* Keeps the contaier fixed size of 300px*/
-  flex-grow: 0;
-  flex-shrink: 0;
-}
 
 .leftTitle {
   font-size: 50px;
@@ -230,9 +246,6 @@ p.leftContent {
   flex-shrink: 0;
 }
 
-.rightTitle {
-}
-
 p.rightContent {
   font-size: 20px;
   text-align: justify;
@@ -246,7 +259,7 @@ p.rightContent {
 }
 
 .skillsLogo {
-  font-size: 10em;
+  font-size: 5em;
 }
 
 .logoSpace {
@@ -321,53 +334,6 @@ p.rightContent {
   margin: auto;
 }
 
-@media (max-device-width: 600px) {
-  .portfolioHead {
-    color: black;
-    text-align: center;
-    font-size: 5em;
-    opacity: 0.7;
-  }
-
-  .formContainer {
-    padding: 0px 10px !important;
-  }
-
-  .msg1Container {
-    width: 275px;
-    transform: rotate(-20deg);
-    margin-left: 90px;
-    margin-top: -35px;
-    border: 2px solid black;
-    padding: 10px 10px;
-  }
-
-  .msg1 {
-    font-size: 4em;
-  }
-
-  .msg2Container {
-    height: 100px;
-    width: 160px;
-    text-align: center;
-    transform: rotate(25deg);
-    margin-left: 210px;
-    border: 2px solid black;
-    padding: 0px 20px;
-  }
-  .row {
-    display: block !important;
-  }
-
-  .col {
-    width: 100% !important;
-    padding: 0px !important;
-  }
-
-  footer {
-    height: 35vh !important;
-  }
-}
 /* ====================================================================== */
 
 .contactDetailsContainer {
@@ -383,12 +349,13 @@ p.rightContent {
   border: 3px dashed #2948f7;
   border-radius: 25px;
   background-color: rgb(72, 156, 252);
-  padding: 25px;
+  padding: 1.5em;
   font-size: 20px;
 }
 
-.socialMediaB {
+.smLogo {
   margin: 20px 10px;
+  font-size: 2em;
 }
 
 .formContainer {
@@ -400,7 +367,7 @@ p.rightContent {
 .row {
   display: flex;
   flex-direction: row;
-  /* margin: 0 -16px; */
+  flex-wrap: wrap;
 }
 
 .col {
@@ -438,7 +405,7 @@ input[type="submit"]:hover {
 footer {
   border-top: 2px solid black;
   background-color: rgb(111, 170, 247);
-  height: 60vh;
+  height: 40vh;
   background-image: url("images/trench.png");
 
   background-position: center bottom;
@@ -485,4 +452,63 @@ footer {
 .invalid {
   border: 2px solid pink;
   outline: red solid 2px;
+}
+
+/* ====================================================================== */
+/* Mobile Responsive 600px*/
+
+@media (max-device-width: 635px) {
+  .portfolioHead {
+    color: black;
+    text-align: center;
+    font-size: 5em;
+    opacity: 0.7;
+  }
+
+  .underSea {
+    height: 112vh;
+  }
+
+  .portfolioContainer {
+    margin: 8em auto;
+  }
+
+  .formContainer {
+    padding: 0px 10px !important;
+  }
+
+  .msg1Container {
+    width: 275px;
+    transform: rotate(-20deg);
+    margin-left: 90px;
+    margin-top: -35px;
+    border: 2px solid black;
+    padding: 10px 10px;
+  }
+
+  .msg1 {
+    font-size: 4em;
+  }
+
+  .msg2Container {
+    height: 100px;
+    width: 160px;
+    text-align: center;
+    transform: rotate(25deg);
+    margin-left: 210px;
+    border: 2px solid black;
+    padding: 0px 20px;
+  }
+  .row {
+    display: block !important;
+  }
+
+  .col {
+    width: 100% !important;
+    padding: 0px !important;
+  }
+
+  /* footer {
+    height: 35vh !important;
+  } */
 }
