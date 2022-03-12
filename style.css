@@ -63,6 +63,7 @@ nav .portFolioTitle {
 
 nav ul li {
   display: inline-block;
+  /* display: none; */
 }
 
 li {
@@ -132,9 +133,8 @@ nav li:hover {
 
 /* Portfolio  section */
 .underSea {
-  height: fit-content;
   background: linear-gradient(#00dcda, #039bca);
-  padding: 20px 0px;
+  padding: 60px 0px;
 }
 
 .portfolioContainer .fadeIn {
@@ -228,32 +228,6 @@ img {
   border: 1px solid black;
   padding: 0px 20px;
   width: fit-content;
-}
-
-p.leftContent {
-  margin-top: 25px;
-  font-size: 20px;
-  text-align: justify;
-  line-height: 1.5;
-}
-
-/* Right */
-
-.imgContainerRight {
-  text-align: center;
-
-  overflow: hidden;
-  margin-left: 25px;
-
-  flex-basis: 300px; /* Keeps the contaier fixed size */
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-
-p.rightContent {
-  font-size: 20px;
-  text-align: justify;
-  line-height: 1.5;
 }
 
 /* Skills =================================================================*/
@@ -461,8 +435,57 @@ footer {
 
 /* ====================================================================== */
 /* Mobile Responsive 600px*/
+/* max-width:  */
+@media (max-width: 635px) {
+  #mobileButton {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
 
-@media (max-device-width: 635px) {
+  .navContainer {
+    margin: 0 0 0 0;
+    text-align: center;
+    align-items: center;
+    background-position: center;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav.responsive ul {
+    margin: 10px 0;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    height: 150vh;
+    width: 100%;
+    display: block;
+  }
+
+  /* nav.responsive ul:hover {
+    background-color: lightblue;
+  } */
+
+  nav.responsive ul li {
+    display: block;
+  }
+
+  nav.responsive a {
+    color: #333;
+    display: block;
+    position: absolute;
+    font-size: 2em;
+    height: 10em;
+  }
+
+  .headContainer {
+    height: 38vh;
+  }
+
   .portfolioHead {
     color: black;
     text-align: center;
@@ -470,9 +493,9 @@ footer {
     opacity: 0.7;
   }
 
-  .underSea {
-    height: 112vh;
-  }
+  /* .underSea {
+    height: 140vh;
+  } */
 
   .portfolioContainer {
     margin: 8em auto;
