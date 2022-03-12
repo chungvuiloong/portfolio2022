@@ -465,6 +465,28 @@ footer {
     opacity: 0.7;
   }
 
+  nav ul {
+    display: none;
+  }
+
+  nav.responsive ul {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    width: 100%;
+    display: block;
+  }
+
+  nav.responsive ul li {
+    display: block;
+  }
+
+  nav.responsive a {
+    color: #333;
+    display: block;
+  }
+
   .underSea {
     height: 112vh;
   }
