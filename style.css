@@ -32,15 +32,11 @@ body {
   display: none;
 }
 
-.titleContainer {
-  overflow: hidden;
-}
-
 /* Header */
 .headContainer {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0.5em;
   align-items: flex-start;
 }
 
@@ -49,9 +45,9 @@ nav .portFolioTitle {
   top: 0;
   width: 100%;
   text-align: center;
-  font-size: 5.25em;
+  font-size: 5em;
   /* opacity: 0.7; */
-  /* object-fit: contain; */
+  object-fit: contain;
 }
 
 .navContainer {
@@ -63,20 +59,19 @@ nav .portFolioTitle {
 
 nav ul li {
   display: inline-block;
-  /* display: none; */
 }
 
 li {
   color: #ffffff;
   font-size: 1em;
-  display: inline-block;
   padding: 16px;
   margin: auto;
   text-align: center;
 }
 
 nav li:hover {
-  background-color: rgb(56, 97, 230);
+  color: black !important;
+  background-color: white;
   border-radius: 50px;
 }
 
@@ -460,26 +455,21 @@ footer {
     background-color: white;
     position: absolute;
     left: 0;
-    top: 85px;
-    height: 150vh;
+    top: 115px;
     width: 100%;
     display: block;
+    z-index: 1;
   }
-
-  /* nav.responsive ul:hover {
-    background-color: lightblue;
-  } */
 
   nav.responsive ul li {
     display: block;
+    padding: 10px;
+    height: 100%;
   }
 
   nav.responsive a {
     color: #333;
-    display: block;
-    position: absolute;
-    font-size: 2em;
-    height: 10em;
+    font-size: 1.5em;
   }
 
   .headContainer {
@@ -490,12 +480,7 @@ footer {
     color: black;
     text-align: center;
     font-size: 5em;
-    opacity: 0.7;
   }
-
-  /* .underSea {
-    height: 140vh;
-  } */
 
   .portfolioContainer {
     margin: 8em auto;
