@@ -70,8 +70,7 @@ li {
 }
 
 nav li:hover {
-  color: black !important;
-  background-color: white;
+  background-color: #006091;
   border-radius: 50px;
 }
 
@@ -201,14 +200,6 @@ img {
   }
 }
 
-.meContainer {
-  display: flex;
-  background-color: #68b6ff;
-  max-width: 100%;
-  padding: 50px;
-  border-top: 2px solid black;
-}
-
 .textContainer {
   display: none;
 }
@@ -223,6 +214,30 @@ img {
   border: 1px solid black;
   padding: 0px 20px;
   width: fit-content;
+}
+
+/* About me ================================================================= */
+.aboutMeContainer {
+  background: linear-gradient(#039bca, rgb(32, 32, 149));
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#aboutMe .seahorse {
+  transform: translateY(-10%);
+  animation: floater 1.5s infinite;
+  transition: ease 0.5s;
+}
+@keyframes floater {
+  0% {
+    transform: translateY(-10%);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateY(10%);
+    transition: ease 0.5s;
+  }
 }
 
 /* Skills =================================================================*/
@@ -467,9 +482,14 @@ footer {
     height: 100%;
   }
 
-  nav.responsive a {
+  nav.responsive li {
     color: #333;
     font-size: 1.5em;
+  }
+
+  nav.responsive li:hover {
+    background-color: #006091;
+    border-radius: 0px;
   }
 
   .headContainer {
