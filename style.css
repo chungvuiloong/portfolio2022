@@ -243,16 +243,16 @@ img {
 .contentContainer {
  display: flex;
  flex-direction: row;
- justify-content: space-between;
 }
 
 .myMessageContainer {
-  border: 2px solid black;
+  border: 2px solid rgb(18, 162, 210);
+  padding: 25px;
 }
 
 .myMessage {
   color: black;
-  font-size: 1em;
+  font-size: 5em;
 }
 
 /* Skills =================================================================*/
