@@ -240,6 +240,10 @@ img {
   }
 }
 
+.textContainer {
+  border: 2px solid black;
+}
+
 /* Skills =================================================================*/
 .skillContainer {
   background-color: coral;
