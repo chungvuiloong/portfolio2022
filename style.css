@@ -227,6 +227,7 @@ img {
   transform: translateY(-10%);
   animation: floater 1.5s infinite;
   transition: ease 0.5s;
+  padding-right: 25px;
 }
 @keyframes floater {
   0% {
@@ -240,7 +241,6 @@ img {
 }
 
 .contentContainer {
-  border: 2px solid black;
  display: flex;
  flex-direction: row;
  justify-content: space-between;
