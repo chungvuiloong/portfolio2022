@@ -246,9 +246,16 @@ img {
 }
 
 .myMessageContainer {
+  display: grid;
   border: 2px solid rgb(18, 162, 210);
+  width: 100%;
   padding: 25px;
   border-radius: 25px;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+  background-position: center;
+  place-content: center;
 }
 
 .myMessage {
@@ -428,10 +435,9 @@ footer {
   margin-top: 75px;
 
   border-bottom: 4px solid rgb(37, 19, 138);
-
   border-radius: 20px 20px 20px 20px;
-  background-color: #3e5ff3;
 
+  background-color: #3e5ff3;
   width: 30%;
 }
 
