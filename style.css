@@ -34,7 +34,7 @@ body {
 /* Left */
 
 .leftTitle {
-  font-size: 4em;
+  font-size: 4.5em;
   font-weight: normal;
   background-color: var(--blue1);
   text-align: center;
@@ -66,7 +66,7 @@ body {
 }
 
 nav .portFolioTitle {
-  color: --var(white);
+  color: var(--white);
   top: 0;
   width: 100%;
   text-align: center;
@@ -96,7 +96,7 @@ li {
 }
 
 nav li:hover {
-  background-color: --var(blue1);
+  background-color: var(--blue1);
   border-radius: 50px;
 }
 
@@ -335,7 +335,7 @@ img {
   width: 350px;
   transform: rotate(-20deg);
   margin-left: 150px;
-  border: 2px solid black;
+  border: 2px solid var(--black);
   padding: 0px 25px;
 }
 
@@ -352,7 +352,7 @@ img {
   text-align: center;
   transform: rotate(25deg);
   margin-left: 300px;
-  border: 2px solid black;
+  border: 2px solid var(--black);
   padding: 0px 20px;
 }
 
@@ -364,10 +364,12 @@ img {
 /* ====================================================================== */
 
 .contactDetailsContainer {
-  border-top: 2px solid --var(black);
+  border-top: 2px solid var(--black);
   padding: 50px;
-  background-color: rgb(99, 171, 253);
-  color: --var(black);
+  /* background-color: rgb(99, 171, 253); */
+
+  background-color: #0B0980;
+  color: var(--black);
 }
 
 .contactDetails {
@@ -454,11 +456,13 @@ footer {
   border-radius: 20px 20px 20px 20px;
 
   background-color: #3e5ff3;
+
+  /* background-color: #3e5ff3; */
   width: 30%;
 }
 
 .copyright {
-  color: white;
+  color: var(--white);
   font-size: 12px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: center;
@@ -489,7 +493,7 @@ footer {
     display: block;
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--white);
   }
 
   .navContainer {
