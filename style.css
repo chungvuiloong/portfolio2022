@@ -19,7 +19,10 @@
   /* Background */
   --blueBackground1: #00dcda;
   --blueBackground2: #039bca;
-
+  --blueBackground3: #1F67B5;
+  --blueBackground4: #224AA7;
+  --blueBackground5: #202095;
+  --blueBackground6: #0B0980;
 
   /* Font size */
   --titleFontSize: 4.5em;
@@ -246,8 +249,8 @@ img {
 /* About me ================================================================= */
 .aboutMeContainer {
   /* background: linear-gradient(var(--blueBackground2), #202095); */
-  background: linear-gradient(var(--blueBackground2), #202095);
-  padding: 20px;
+  background: linear-gradient(var(--blueBackground2), var(--blueBackground3));
+  padding: 100px 20px;
 }
 
 #aboutMe .seahorse {
@@ -293,8 +296,8 @@ img {
 
 /* Skills =================================================================*/
 .skillContainer {
-  background-color: coral;
-  padding: 20px;
+  background: linear-gradient(var(--blueBackground3), var(--blueBackground4));
+  padding: 100px 20px;
 }
 
 .skillsLogo {
@@ -324,7 +327,9 @@ img {
 .cmImgContainer {
   height: 200px;
   max-width: 100%;
-  background-color: rgb(104, 182, 255);
+  /* background-color: rgb(104, 182, 255); */
+  background: linear-gradient(var(--blueBackground4), var(--blueBackground5));
+
   padding: 20px 0px 0px 0px;
   border-top: 2px solid ;
 }
@@ -381,8 +386,7 @@ img {
   border-top: 2px solid var(--black);
   padding: 50px;
   /* background-color: rgb(99, 171, 253); */
-
-  background-color: #0B0980;
+  background: linear-gradient(var(--blueBackground5), var(--blueBackground6));
   color: var(--black);
 }
 
@@ -391,7 +395,9 @@ img {
   line-height: 1.5;
   border: 3px dashed #2948f7;
   border-radius: 25px;
-  background-color: rgb(72, 156, 252);
+  background-color: var(--blueBackground3);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
   padding: 1.5em;
   font-size: 20px;
 }
