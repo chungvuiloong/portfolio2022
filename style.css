@@ -737,17 +737,9 @@ footer {
   .grid-container {
     color: transparent;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-    grid-template-areas:
-    '. 		        . 			      . 		        . 		         		'
-    'left 		    left 			    middleTop 		middleTop 		 		  '
-    'left 		    left 			    middleBottom 	middleBottom 	 		  '
-    'footerLeft1 	footerMiddle 	footerMiddle 	footerMiddle 	 		  '
-    'footerLeft2 	footerMiddle 	footerMiddle 	footerMiddle 	 '
-    'footerLeft3 	right 	          footerRight footerRight	           '
-    'right right footerRight footerRight'
-    'right right footerRight footerRight';
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(75px, 50px);
+
     grid-gap: 10px;
     background-color: #2196F3;
   }
