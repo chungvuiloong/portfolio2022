@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+.empty {
+  color: transparent;
+}
+
 :root {
   /* Dark blue */
   --blue1: #006091; 
