@@ -496,13 +496,13 @@ footer {
 }
 
 #backToTop {
-  background-color: chocolate;
+  background-color: var(--blue1);
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 0.5rem;
+  right: 1rem;
   font-family: inherit;
   cursor: pointer;
   color: white;
