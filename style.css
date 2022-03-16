@@ -743,7 +743,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(75px, 50px);
-
     grid-gap: 10px;
     background-color: #2196F3;
   }
