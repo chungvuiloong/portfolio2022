@@ -63,7 +63,6 @@ body {
 } */
 
 /*  */
-
 #mobileButton {
   display: none;
 }
@@ -165,10 +164,8 @@ nav li:hover {
 /* Portfolio  section */
 .underSea {
   /* background: linear-gradient(#00dcda, #039bca); */
-  background: linear-gradient(var(--blueBackground1), var(--blueBackground2)); 
-
-  
-  padding: 60px 0px;
+  background: linear-gradient(var(--blueBackground1), var(--blueBackground2));
+  padding: 100px 0px;
 }
 
 .portfolioContainer .fadeIn {
@@ -210,6 +207,10 @@ img {
 
 .portfolioContainer div.portfolioDescription {
   font-style: italic;
+}
+
+.portfolioContainer a {
+  margin: 10px 20px 10px 20px;
 }
 
 @keyframes fadeIn {
