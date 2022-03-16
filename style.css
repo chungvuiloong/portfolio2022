@@ -7,6 +7,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Dark blue */
+  --blue1: #006091; 
+
+
+
+  --black: black;
+  --white: white;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -21,12 +31,27 @@ body {
   background-color: #000;
 }
 
+/* Left */
+
+.leftTitle {
+  font-size: 4em;
+  font-weight: normal;
+  background-color: var(--blue1);
+  text-align: center;
+  transform: rotate(350deg);
+  border: 1px solid black;
+  padding: 0px 20px;
+  width: fit-content;
+}
+
 /* testing sticky */
 /* .sticky {
   top: 0;
   position: sticky !important;
   color: white;
 } */
+
+/*  */
 
 #mobileButton {
   display: none;
@@ -41,12 +66,14 @@ body {
 }
 
 nav .portFolioTitle {
-  color: white;
+  color: --var(white);
   top: 0;
   width: 100%;
   text-align: center;
   font-size: 5em;
   object-fit: contain;
+  font-weight: normal;
+  padding-left: 20px;
 }
 
 .navContainer {
@@ -69,7 +96,7 @@ li {
 }
 
 nav li:hover {
-  background-color: #006091;
+  background-color: --var(blue1);
   border-radius: 50px;
 }
 
@@ -203,24 +230,12 @@ img {
   display: none;
 }
 
-/* Left */
 
-.leftTitle {
-  font-size: 50px;
-  background-color: #006091;
-  text-align: center;
-  transform: rotate(350deg);
-  border: 1px solid black;
-  padding: 0px 20px;
-  width: fit-content;
-}
 
 /* About me ================================================================= */
 .aboutMeContainer {
   background: linear-gradient(#039bca, rgb(32, 32, 149));
   padding: 20px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
 }
 
 #aboutMe .seahorse {
@@ -248,6 +263,7 @@ img {
 .myMessageContainer {
   display: grid;
   border: 2px solid rgb(18, 162, 210);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   width: 100%;
   padding: 25px;
   border-radius: 25px;
@@ -298,7 +314,7 @@ img {
   max-width: 100%;
   background-color: rgb(104, 182, 255);
   padding: 20px 0px 0px 0px;
-  border-top: 2px solid black;
+  border-top: 2px solid ;
 }
 
 .cmImg {
@@ -348,10 +364,10 @@ img {
 /* ====================================================================== */
 
 .contactDetailsContainer {
-  border-top: 2px solid black;
+  border-top: 2px solid --var(black);
   padding: 50px;
   background-color: rgb(99, 171, 253);
-  color: #000;
+  color: --var(black);
 }
 
 .contactDetails {
