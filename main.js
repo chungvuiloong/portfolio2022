@@ -82,7 +82,7 @@ lastNameCheck = () => {
   } else if (lNameInput.match(numberFilter)) {
     alert("This is a number. Not a name.");
     lName.setAttribute("class", "invalid");
-  } else if (lNameInput.match(letterFilter)) {
+  } else if (!lNameInput.match(letterFilter)) {
     alert("You have a number in your last name?!");
     lName.setAttribute("class", "invalid");
   } else {
