@@ -492,62 +492,124 @@ footer {
 /* ====================================================================== */
 /* gallery */
 
-.left { 
-  grid-area: left; 
-  height: 300px;
-}
-.right { 
-  grid-area: right; 
+#gallery {
+  background-color: #2196F3;
+  padding: 90px;
 }
 
-.middleTop { 
+#gallery h2 {
+  color: black;
+}
+
+.left { 
+  grid-area: left; 
+  height: 400px;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1605979257913-1704eb7b6246?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.right {
+  height: 600px;
+  width: 200px;
+  top: 0px;
+  grid-area: right;
+  background-image: url("https://images.unsplash.com/photo-1611931960487-4932667079f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.middleTop {
+  
+  background-size: cover;
+  background-repeat: no-repeat;
   grid-area: middleTop; 
+  background-image: url("https://images.unsplash.com/photo-1613771404721-1f92d799e49f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
 }
 
 .middleBottom { 
+  background: url("https://images.unsplash.com/photo-1595594448400-cf1dba1ea953?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-area: middleBottom; 
 }
 
-.footerLeft1 { 
+.footerLeft1 {
+  background: url("https://images.unsplash.com/photo-1627856013091-fed6e4e30025?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px; 
   grid-area: footerLeft1; 
 }
 
-.footerLeft2 { 
+.footerLeft2 {
+  background: url("https://images.unsplash.com/photo-1637164011965-635d3e762a38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px; 
   grid-area: footerLeft2; 
 }
 
-.footerLeft3 { 
+.footerLeft3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: footerMiddle;
+  background-image: url("galleryImages/pikachu.jpg");
+  width: 100px; 
   grid-area: footerLeft3; 
 }
 
-.footerRight { 
+.footerRight {
+  background: url("https://images.unsplash.com/photo-1630887961979-f941d415a2cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80") no-repeat;
+  background-size: cover;
+  width: 300px;
   grid-area: footerRight; 
 }
 
-.footerMiddle { 
-  grid-area: footerMiddle; 
+.footerMiddle {
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: footerMiddle;
+  background-image: url("https://images.unsplash.com/photo-1638491691925-37e80ad57090?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80");
 }
-
-
 
 .grid-container {
+  color: transparent;
   display: grid;
   grid-template-areas:
-  'left 		left 			middleTop 		middleTop 		right 		right'
-  'left 		left 			middleBottom 	middleBottom 	right 		right'
-  'footerLeft1 	footerMiddle 	footerMiddle 	footerMiddle 	right 		right'
+  '. 		        . 			      . 		        . 		        right 		  right'
+  'left 		    left 			    middleTop 		middleTop 		right 		  right'
+  'left 		    left 			    middleBottom 	middleBottom 	right 		  right'
+  'footerLeft1 	footerMiddle 	footerMiddle 	footerMiddle 	right 		  right'
   'footerLeft2 	footerMiddle 	footerMiddle 	footerMiddle 	footerRight footerRight'
-  'footerLeft3 	footerMiddle 	footerMiddle 	footerMiddle 	footerRight footerRight';
+  'footerLeft3 	. 	          . 	          . 	          footerRight footerRight';
   grid-gap: 10px;
   background-color: #2196F3;
-  padding: 10px;
 }
 
-.grid-container > div {
+/* .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 15px 0;
   font-size: 30px;
+  filter: blur(1px) grayscale(1);
+
+} */
+
+.grid-container div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 30px;
+  filter: blur(1px) grayscale(1);
+
+}
+
+.grid-container div:hover {
+  transform: rotate(-5deg);
+  filter: blur(0px) grayscale(0);
 }
 
 
