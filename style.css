@@ -699,6 +699,10 @@ footer {
     margin: 8em auto;
   }
 
+  .myMessage {
+    font-size: 2.5em;
+  }
+
   .formContainer {
     padding: 0px 10px !important;
   }
