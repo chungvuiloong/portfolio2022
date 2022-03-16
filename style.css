@@ -610,6 +610,8 @@ footer {
 .grid-container div:hover {
   transform: rotate(-5deg);
   filter: blur(0px) grayscale(0);
+  border: 2px solid #224AA7;
+  box-shadow: rgba(34, 74, 167, 0.56) 0px 22px 70px 4px;
 }
 
 
