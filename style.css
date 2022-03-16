@@ -9,6 +9,7 @@
 
 .empty {
   color: transparent;
+  display: none;
 }
 
 :root {
