@@ -15,6 +15,14 @@
 
   --black: black;
   --white: white;
+
+  /* Background */
+  --blueBackground1: #00dcda;
+  --blueBackground2: #039bca;
+
+
+  /* Font size */
+  --titleFontSize: 4.5em;
 }
 
 a {
@@ -34,7 +42,7 @@ body {
 /* Left */
 
 .leftTitle {
-  font-size: 4.5em;
+  font-size: var(--titleFontSize);
   font-weight: normal;
   background-color: var(--blue1);
   text-align: center;
@@ -153,7 +161,10 @@ nav li:hover {
 
 /* Portfolio  section */
 .underSea {
-  background: linear-gradient(#00dcda, #039bca);
+  /* background: linear-gradient(#00dcda, #039bca); */
+  background: linear-gradient(var(--blueBackground1), var(--blueBackground2)); 
+
+  
   padding: 60px 0px;
 }
 
@@ -234,7 +245,8 @@ img {
 
 /* About me ================================================================= */
 .aboutMeContainer {
-  background: linear-gradient(#039bca, rgb(32, 32, 149));
+  /* background: linear-gradient(var(--blueBackground2), #202095); */
+  background: linear-gradient(var(--blueBackground2), #202095);
   padding: 20px;
 }
 
@@ -340,9 +352,10 @@ img {
 }
 
 .msg1 {
-  font-size: 4.5em;
+  font-size: var(--titleFontSize);
   margin: auto;
   display: inline-block;
+  font-weight: normal;
 }
 
 .msg2Container {
@@ -357,8 +370,9 @@ img {
 }
 
 .msg2 {
-  font-size: 4.5em;
+  font-size: var(--titleFontSize);
   margin: auto;
+  font-weight: normal;
 }
 
 /* ====================================================================== */
@@ -463,7 +477,7 @@ footer {
 
 .copyright {
   color: var(--white);
-  font-size: 12px;
+  font-size: 1em;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: center;
   margin: 20px;
