@@ -15,6 +15,7 @@ const mobButton = document.querySelector("#mobileButton");
 const nav = document.querySelector("nav");
 
 let links = document.querySelectorAll("nav ul li a");
+const button = document.querySelector("#backToTop");
 
 // This parallex scrolling animation
 window.addEventListener("scroll", () => {
@@ -44,6 +45,14 @@ const mobMenu = () => {
   }
 };
 mobButton.addEventListener("click", mobMenu);
+
+
+const getToTop = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+button.addEventListener("click", getToTop);
+
 
 // Press Submit and it meows
 meowUs = (event) => {
@@ -171,3 +180,5 @@ const scrollAnimation = () => {
     classCont.style.display = "none";
   }
 };
+
+
