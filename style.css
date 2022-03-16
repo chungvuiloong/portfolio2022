@@ -734,6 +734,10 @@ footer {
     height: 35vh !important;
   } */
 
+  #gallery {
+    padding: 25px;
+  }
+
   .grid-container {
     color: transparent;
     display: grid;
