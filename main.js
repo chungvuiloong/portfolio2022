@@ -80,7 +80,7 @@ lastNameCheck = () => {
   } else if (lNameInput.match(numberFilter)) {
     alert("This is a number. Not a name.");
     lName.setAttribute("class", "invalid");
-  } else if (!lNameInput.match(letterFilter)) {
+  } else if (lNameInput.match(letterFilter)) {
     alert("You have a number in your last name?!");
     lName.setAttribute("class", "invalid");
   } else {
@@ -89,7 +89,7 @@ lastNameCheck = () => {
 };
 
 cNumberCheck = () => {
-  var numberValue = document.querySelector("#fName").value;
+  var numberValue = document.querySelector("#cNumber").value;
   var cNumber = document.querySelector("#cNumber");
 
   if (numberValue == "") {
@@ -136,7 +136,16 @@ ageCheck = () => {
       "The oldest living cat, Creme Puff, is 38 years old. You have broken the record for oldest cat! If you are a cat...."
     );
     ageHighlight.setAttribute("class", "valid");
-  } else {
+  } else if (ageValue >= 18) {
+    alert("Now you can vote");
+    ageHighlight.setAttribute("class", "valid");
+  } else if (ageValue >= 5) {
+    alert("I highlighy doubt you wrote this. Is it your dad or your mom?");
+    ageHighlight.setAttribute("class", "valid");
+  } 
+  
+  
+  else {
     ageHighlight.setAttribute("class", "valid");
   }
 };
@@ -149,7 +158,6 @@ window.onscroll = function () {
 
 const scrollAnimation = () => {
   const classCont = document.querySelector(".textContainer");
-  // const test = document.querySelector(".testing");
 
   if (
     document.body.scrollTop > 300 ||
