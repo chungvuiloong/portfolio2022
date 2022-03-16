@@ -46,10 +46,12 @@ const mobMenu = () => {
 mobButton.addEventListener("click", mobMenu);
 
 // Press Submit and it meows
-meowUs = () => {
+meowUs = (event) => {
+  // event.preventDefault();
   // 1st Prototype - Works!!! But need to get ID from HTML
   // var meow = document.getElementById("meow");
   meow.play() + alert("Thank you for meowing us! We will meow back ASAP!");
+  
 };
 
 firstNameCheck = () => {
