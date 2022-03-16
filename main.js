@@ -173,12 +173,23 @@ const scrollAnimation = () => {
   if (
     document.body.scrollTop > 300 ||
     document.documentElement.scrollTop > 300
-  ) {
+  ) 
+  
+  {
     classCont.classList.add("visible");
     classCont.style.display = "block";
   } else {
     classCont.style.display = "none";
   }
+
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+
+
+
 };
 
 
