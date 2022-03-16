@@ -489,6 +489,67 @@ footer {
   text-align: center;
   margin: 20px;
 }
+/* ====================================================================== */
+/* gallery */
+
+.left { 
+  grid-area: left; 
+  height: 300px;
+}
+.right { 
+  grid-area: right; 
+}
+
+.middleTop { 
+  grid-area: middleTop; 
+}
+
+.middleBottom { 
+  grid-area: middleBottom; 
+}
+
+.footerLeft1 { 
+  grid-area: footerLeft1; 
+}
+
+.footerLeft2 { 
+  grid-area: footerLeft2; 
+}
+
+.footerLeft3 { 
+  grid-area: footerLeft3; 
+}
+
+.footerRight { 
+  grid-area: footerRight; 
+}
+
+.footerMiddle { 
+  grid-area: footerMiddle; 
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'left 		left 			middleTop 		middleTop 		right 		right'
+  'left 		left 			middleBottom 	middleBottom 	right 		right'
+  'footerLeft1 	footerMiddle 	footerMiddle 	footerMiddle 	right 		right'
+  'footerLeft2 	footerMiddle 	footerMiddle 	footerMiddle 	footerRight footerRight'
+  'footerLeft3 	footerMiddle 	footerMiddle 	footerMiddle 	footerRight footerRight';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 30px;
+}
+
 
 /* ====================================================================== */
 /* Classes used by Javascript*/
