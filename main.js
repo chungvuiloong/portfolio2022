@@ -150,7 +150,7 @@ ageCheck = () => {
   } else if (ageValue >= 18) {
     alert("Now you can vote");
     ageHighlight.setAttribute("class", "valid");
-  } else if (ageValue >= 5) {
+  } else if (ageValue <= 5) {
     alert("I highlighy doubt you wrote this. Is it your dad or your mom?");
     ageHighlight.setAttribute("class", "valid");
   } 
