@@ -12,6 +12,10 @@
   display: none;
 }
 
+.bg-black {
+  background-color: #000;
+}
+
 :root {
   /* Dark blue */
   --blue1: #006091; 
@@ -32,7 +36,6 @@
 
 a {
   text-decoration: none !important;
-  color: inherit;
 }
 
 html,
