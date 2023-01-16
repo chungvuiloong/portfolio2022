@@ -31,7 +31,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
 }
 
@@ -105,6 +105,11 @@ li {
 nav li:hover {
   background-color: var(--blue1);
   border-radius: 50px;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 /* Parallax Layers */
