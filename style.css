@@ -15,9 +15,6 @@
 :root {
   /* Dark blue */
   --blue1: #006091; 
-
-
-
   --black: black;
   --white: white;
 
@@ -42,9 +39,9 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   scroll-behavior: smooth;
-  background-color: #000;
+  background-color: #000; /* dealete */
 }
 
 /* Left */
@@ -60,17 +57,12 @@ body {
   width: fit-content;
 }
 
-/* testing sticky */
-/* .sticky {
-  top: 0;
-  position: sticky !important;
-  color: white;
-} */
-
 /*  */
 #mobileButton {
   display: none;
 }
+
+
 
 /* Header */
 .headContainer {
@@ -178,7 +170,7 @@ nav li:hover {
 }
 
 .portfolioContainer {
-  height: 15em;
+  height: 10em;
   width: 20em;
   background: lightblue;
   color: black;
@@ -691,11 +683,6 @@ footer {
     font-size: 1.5em;
   }
 
-  nav.responsive li:hover {
-    background-color: #006091;
-    border-radius: 0px;
-  }
-
   .headContainer {
     height: 38vh;
   }
@@ -740,14 +727,7 @@ footer {
     border: 2px solid black;
     padding: 0px 20px;
   }
-  .row {
-    display: block !important;
-  }
 
-  .col {
-    width: 100% !important;
-    padding: 0px !important;
-  }
 
   /* footer {
     height: 35vh !important;

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Jere Portfolio</title>
   </head>
 
@@ -21,11 +21,12 @@
     <!-- Nav bar -->
     <header>
 
-      <section> 
+      <section>
         <h2 class="empty">Empty</h2>
-        <nav class="headContainer">
+        <nav class="headContainer bg-black">
           <div class="titleContainer">
             <h2 class="portFolioTitle">Jere Portfolio</h2>
+
           </div>
           <div class="navContainer">
             <button id="mobileButton">
@@ -133,39 +134,57 @@
 
       <div class="row">
         <div class="portfolioContainer">
-          <img src="images/happy.jpg" alt="happy" />
-          <div class="text">
+          <div class="portfolioTitle">Landing page (RSS Feed)</div>
+          <div class="portfolioDescription">A landing page with parallax effect header and rss feed.</div>
+          <a href="https://lianatechnologylandingpage.vercel.app/" class="more">See More</a>
+          <a href="https://github.com/jirimicvl/landingpage" class="more">Github</a>
+        </div>
+
+        <div class="portfolioContainer">
+          <div class="portfolioTitle">Travel App</div>
+          <div class="portfolioDescription">An app that show list of countries and geo tracks your location.</div>
+          <a href="https://mrjaytravelapp.netlify.app/" class="more">See More</a>
+        </div>
+
+        <div class="portfolioContainer">
+          <div class="portfolioTitle">Parallax Midnight</div>
+          <div class="portfolioDescription">A website with parallax effect</div>
+          <a href="https://parallax-midnight.vercel.app" class="more">See More</a>
+          <a href="https://github.com/jirimicvl/parallax_midnight" class="more">Github</a>
+        </div>
+
+      <div class="portfolioContainer">
+        <div class="portfolioTitle">Parallax Carousel</div>
+        <div class="portfolioDescription">Parallax effect with company names moving from left to right</div>
+        <a href="https://parallax-carousel-company.vercel.app/" class="more">See More</a>
+        <a href="https://github.com/jirimicvl/parallax_carousel_company" class="more">Github</a>
+      </div>
+
+
+        <div class="portfolioContainer">
             <div class="portfolioTitle">Elusive Button</div>
             <div class="portfolioDescription">Try to move your mouse pointer over the button and see what happens!</div>
             <a href="https://mrjay-elusive-button.netlify.app/" class="more">See More</a>
-          </div>
+            <a href="https://github.com/jirimicvl/elusiveButton" class="more">Github</a>
         </div>
 
+
         <div class="portfolioContainer">
-          <img src="images/pikachu.jpg" alt="pikachu"/>
-          <div class="text">
             <div class="portfolioTitle">Whack-A-Button!</div>
             <div class="portfolioDescription">Whack the button as much as you can! Try to get as much point you can get before it moves to other circle!</div>
             <a href="https://mrjay-speedgame.netlify.app/" class="more">See More</a>
-          </div>
         </div>
 
         <div class="portfolioContainer">
-          <img src="images/pikachu.jpg" alt="pikachu"/>
-          <div class="text">
             <div class="portfolioTitle">License Search</div>
             <div class="portfolioDescription">Looking for a specific car license?</div>
             <a href="https://license-search.netlify.app/" class="more">See More</a>
-          </div>
         </div>
 
         <div class="portfolioContainer">
-          <img src="images/pikachu.jpg" alt="pikachu"/>
-          <div class="text">
             <div class="portfolioTitle">BG colour picker</div>
             <div class="portfolioDescription">Use the arrows to change the flow of colours!</div>
             <a href="https://bg-colour-picker-v2.netlify.app/" class="more">See More</a>
-          </div>
         </div>
       </div>
 
@@ -176,51 +195,44 @@
       <div>
         <h2 class="leftTitle">About me</h2>
       </div>
-
       <div class="contentContainer">
         <img src="images/seahorse.png" class="seahorse" alt="seahorse"/>
         <div class="myMessageContainer">
           <div class="myMessage"> I am a cutiepie!</div>
         </div>
       </div>
-
     </section>
 
     <!-- Skill -->
     <section id="skills" class="skillContainer">
       <div>
-        <h2 class="leftTitle">Skills</h2>
+        <h2 class="leftTitle">Skills </h2>
       </div>
 
-      <div class="row logoSpace">
-        <div class="logoContainer">
+      <div class="row ">
+        <div class="logoContainer text-center col-sm-2 ">
           <i class="fa-brands fa-html5 skillsLogo"></i>
           <div class="logoText">HTML</div>
-          <progress class="progressBarHTML" value="95" max="100"></progress>
         </div>
 
-        <div class="logoContainer">
+        <div class="logoContainer text-center col-sm-2">
           <i class="fa-brands fa-css3-alt skillsLogo"></i>
           <div class="logoText">CSS</div>
-          <progress class="progressBarCSS" value="90" max="100"></progress>
         </div>
 
-        <div class="logoContainer">
+        <div class="logoContainer text-center col-sm-2">
           <i class="fa-brands fa-js-square skillsLogo"></i>
           <div class="logoText">Javascript</div>
-          <progress class="progressBarJavascript" value="80" max="100"></progress>
         </div>
 
-        <div class="logoContainer">
+        <div class="logoContainer text-center col-sm-2">
           <i class="fa-brands fa-php skillsLogo"></i>
           <div class="logoText">PHP</div>
-          <progress class="progressBarPHP" value="75" max="100"></progress>
         </div>
 
-        <div class="logoContainer">
+        <div class="logoContainer text-center col-sm-2">
           <i class="fa-brands fa-react skillsLogo"></i>
           <div class="logoText">React</div>
-          <progress class="progressBarReact" value="70" max="100"></progress>
         </div>
       </div>
     </section>
@@ -336,7 +348,8 @@
 
     <footer>
       <div class="messageBox">
-        <div>Coded by <a href="https://github.com/jirimicvl">Jere</a></div>
+
+        <div class="text-black">Coded by <a href="https://github.com/jirimicvl">Jere</a></div>
       </div>
 
       <div class="copyright">Copyright © Jere's Website 2022</div>
