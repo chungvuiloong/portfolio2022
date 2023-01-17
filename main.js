@@ -17,6 +17,9 @@ const nav = document.querySelector("nav");
 let links = document.querySelectorAll("nav ul li a");
 const button = document.querySelector("#backToTop");
 
+
+
+
 // This parallex scrolling animation
 window.addEventListener("scroll", () => {
   let yPosition = window.scrollY;

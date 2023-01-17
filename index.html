@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -127,79 +128,77 @@
     </header>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="underSea">
+    <section id="portfolio" class="underSea px-5 pt-cus">
       <div class="textContainer">
         <h2 class="leftTitle">Portfolio</h2>
       </div>
 
-      <div class="row">
-        <div class="portfolioContainer">
-          <div class="portfolioTitle">Landing page (RSS Feed)</div>
-          <div class="portfolioDescription">A landing page with parallax effect header and rss feed.</div>
-          <a href="https://lianatechnologylandingpage.vercel.app/" class="more">See More</a>
-          <a href="https://github.com/jirimicvl/landingpage" class="more">Github</a>
+      <div class="row row-cols-4">
+        <div class="card portfolioContainer">
+          <div class="card-body">
+            <h5 class="card-title">Landing page (RSS Feed)</h5>
+            <p class="card-text text-wrap ">A landing page with parallax effect header, animated numbers, modal subscription and rss feed.</p>
+            <a href="https://lianatechnologylandingpage.vercel.app/" class="btn btn-primary">See more</a>
+            <a href="https://github.com/jirimicvl/landingpage" class="btn btn-dark text-white"><i class="bi bi-github"></i> Github</a>
+          </div>
         </div>
 
-        <div class="portfolioContainer">
-          <div class="portfolioTitle">Travel App</div>
-          <div class="portfolioDescription">An app that show list of countries and geo tracks your location.</div>
-          <a href="https://mrjaytravelapp.netlify.app/" class="more">See More</a>
+        <div class="card portfolioContainer">
+          <div class="card-body">
+            <h5 class="card-title">Travel App</h5>
+            <p class="card-text text-wrap ">An app that shows a list of countries, detailed information about a country, and geo tracks your location. </p>
+            <a href="https://mrjaytravelapp.netlify.app/" class="btn btn-primary">See more</a>
+          </div>
         </div>
 
-        <div class="portfolioContainer">
-          <div class="portfolioTitle">Parallax Midnight</div>
-          <div class="portfolioDescription">A website with parallax effect</div>
-          <a href="https://parallax-midnight.vercel.app" class="more">See More</a>
-          <a href="https://github.com/jirimicvl/parallax_midnight" class="more">Github</a>
+        <div class="card portfolioContainer">
+          <div class="card-body">
+            <h5 class="card-title">Parallax Midnight</h5>
+            <p class="card-text text-wrap ">A website with parallax effect</p>
+            <a href="https://parallax-midnight.vercel.app" class="btn btn-primary">See more</a>
+            <a href="https://github.com/jirimicvl/parallax_midnight" class="btn btn-dark text-white"><i class="bi bi-github"></i> Github</a>
+          </div>
         </div>
 
-        <div class="portfolioContainer">
-          <div class="portfolioTitle">Counter App (Recoil)</div>
-          <div class="portfolioDescription">A counter increases or decreases its number. Used recoil state management.</div>
-          <a href="https://mrjayscounterapp-recoil.vercel.app " class="more">See More</a>
-          <a href="https://github.com/jirimicvl/counterapp_recoil" class="more">Github</a>
+        <div class="card portfolioContainer">
+          <div class="card-body">
+            <h5 class="card-title">Counter App (Recoil state)</h5>
+            <p class="card-text text-wrap ">A counter increases or decreases its number. Used recoil state management.</p>
+            <a href="https://mrjayscounterapp-recoil.vercel.app " class="btn btn-primary">See more</a>
+            <a href="https://github.com/jirimicvl/counterapp_recoil" class="btn btn-dark text-white"><i class="bi bi-github"></i> Github</a>
+          </div>
         </div>
 
-        <div class="portfolioContainer">
-          <div class="portfolioTitle">Counter App (Redux)</div>
-          <div class="portfolioDescription">A counter increases or decreases its number. Used redux state management.</div>
-          <a href="https://mrjayssimplecounterreduxapp.netlify.app" class="more">See More</a>
-          <a href="https://github.com/jirimicvl/counterapp_redux" class="more">Github</a>
+        <div class="card portfolioContainer">
+          <div class="card-body">
+            <h5 class="card-title">Counter App (Redux state)</h5>
+            <p class="card-text text-wrap ">A counter increases or decreases its number. Used redux state management.</p>
+            <a href="https://mrjayssimplecounterreduxapp.netlify.app" class="btn btn-primary">See more</a>
+            <a href="https://github.com/jirimicvl/counterapp_redux" class="btn btn-dark text-white"><i class="bi bi-github"></i> Github</a>
+          </div>
         </div>
 
-      <div class="portfolioContainer">
-        <div class="portfolioTitle">Parallax Carousel</div>
-        <div class="portfolioDescription">Parallax effect with company names moving from left to right</div>
-        <a href="https://parallax-carousel-company.vercel.app/" class="more">See More</a>
-        <a href="https://github.com/jirimicvl/parallax_carousel_company" class="more">Github</a>
-      </div>
+        <div class="card portfolioContainer">
+          <div class="card-body">
+            <h5 class="card-title">Background Colour picker</h5>
+            <p class="card-text text-wrap ">Choose a new colour and use the arrows to change the flow of colours!</p>
+            <a href="https://bg-colour-picker-v2.netlify.app/" class="btn btn-primary">See more</a>
+            <a href="https://github.com/jirimicvl/counterapp_redux" class="btn btn-dark text-white"><i class="bi bi-github"></i> Github</a>
+          </div>
+        </div>
 
-
-        <div class="portfolioContainer">
-            <div class="portfolioTitle">Elusive Button</div>
-            <div class="portfolioDescription">Try to move your mouse pointer over the button and see what happens!</div>
-            <a href="https://mrjay-elusive-button.netlify.app/" class="more">See More</a>
-            <a href="https://github.com/jirimicvl/elusiveButton" class="more">Github</a>
+        <div class="card portfolioContainer">
+          <div class="card-body">
+            <h5 class="card-title">Parallax Carousel</h5>
+            <p class="card-text text-wrap ">Parallax effect with company names moving from left to right</p>
+            <a href="https://parallax-carousel-company.vercel.app/" class="btn btn-primary">See more</a>
+            <a href="https://github.com/jirimicvl/parallax_carousel_company" class="btn btn-dark text-white"><i class="bi bi-github"></i> Github</a>
+          </div>
         </div>
 
 
-        <div class="portfolioContainer">
-            <div class="portfolioTitle">Whack-A-Button!</div>
-            <div class="portfolioDescription">Whack the button as much as you can! Try to get as much point you can get before it moves to other circle!</div>
-            <a href="https://mrjay-speedgame.netlify.app/" class="more">See More</a>
-        </div>
 
-        <div class="portfolioContainer">
-            <div class="portfolioTitle">License Search</div>
-            <div class="portfolioDescription">Looking for a specific car license?</div>
-            <a href="https://license-search.netlify.app/" class="more">See More</a>
-        </div>
 
-        <div class="portfolioContainer">
-            <div class="portfolioTitle">BG colour picker</div>
-            <div class="portfolioDescription">Use the arrows to change the flow of colours!</div>
-            <a href="https://bg-colour-picker-v2.netlify.app/" class="more">See More</a>
-        </div>
       </div>
 
     </section>
@@ -210,12 +209,34 @@
         <h2 class="leftTitle">About me</h2>
       </div>
       <div class="contentContainer">
-        <img src="images/seahorse.png" class="seahorse" alt="seahorse"/>
-        <div class="myMessageContainer">
-          <div class="myMessage"> I am a cutiepie!</div>
+        <div class="container">
+          <ul class="myMessageContainer lh-lg">
+            <li class="myMessage fs-3">What wakes me up every morning is my passion. Not only coffee! It is my daily programming.</li>
+            <li><text id="programming_exp"></text>+ years of programming in HTML, CSS, React and Javascript.</li>
+            <li>6+ years of mixed working experience (recruitment, sales, construction, education).</li>
+            <li><b>Study background</b>: Degree in Primary Education</li>
+            <li><b>Motivation</b>: Programming, the slogan "The next day is better then yesterday"</li>
+            <li><b>Favourite Things to do</b>: Programming, learning new technologies and programming languages, meeting new people</li>
+            <li><b>Favourite animals</b>: Can't settle for which one!</li>
+            <li><b>Favourite Drinks</b>: Coffee or cider</li>
+            <li><b>Favourite Food</b>: Chocolate, seafood, rapu (crawfish)</li>
+            <li><b>Favourite Book</b>: None! Even though, I like reading!</li>
+            <li><b>Favourite Music</b>: None! There are many great music I can't choose!</li>
+            <li><b>Fun fact</b>: I can say "I love coffee in 7 different languages"</li>
+            <li><b>Guilty Pleasure</b>: Finding inconveniences/issues faced by people and making an app to solve it! </li>
+          </ul>
         </div>
       </div>
     </section>
+
+
+    <!-- 
+    🌸 Holiday destination of choice: Japan to see friends & family
+    🌸 Favourite item: All kinds of hats
+    🌸 Favourite karaoke song: Ankkurinappi
+    🌸 Favourite artist: The Smiths
+    
+    -->
 
     <!-- Skill -->
     <section id="skills" class="skillContainer">
@@ -362,13 +383,12 @@
 
     <footer>
       <div class="messageBox">
-
-        <div class="text-black">Coded by <a href="https://github.com/jirimicvl">Jere</a></div>
+        <div class="text-black fw-bolder">Coded by <a href="https://github.com/jirimicvl" class="text-black">Jere</a></div>
       </div>
 
       <div class="copyright">Copyright © Jere's Website 2022</div>
       <div class="copyright">
-        <a href="https://www.freepik.com/upklyak"
+        <a href="https://www.freepik.com/upklyak" class="text-white"
           >Hero banner & footer images are created by upklyak -
           www.freepik.com</a>
       </div>
@@ -377,7 +397,6 @@
         Top
         <span class="material-icons"> arrow_upward </span>
       </button>
-      
     </footer>
 
     <audio
@@ -424,5 +443,10 @@
       src="https://kit.fontawesome.com/992a8ac3cf.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const date = new Date();
+      const years_programming_exp = date.getFullYear() - 2020;
+      document.getElementById("programming_exp").innerHTML = years_programming_exp;
+    </script>
   </body>
 </html>
