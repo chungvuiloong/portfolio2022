@@ -101,6 +101,14 @@ nav ul li {
   display: inline-block;
 }
 
+nav li {
+    color: #ffffff;
+    font-size: 1em;
+    padding: 16px;
+    margin: auto;
+    text-align: center;
+}
+
 nav li:hover {
   background-color: var(--blue1);
   border-radius: 50px;
